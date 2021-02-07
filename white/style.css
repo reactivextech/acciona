@@ -933,10 +933,10 @@ input:focus,select:focus,button:focus{
 	content: "";
 	opacity: 0;
 	transition: 0.5s;
-	opacity: 0.4;
+	opacity: 1;
 }
 .ico_single_team:hover .ico_single_img::before{
-	opacity: 0.5;
+	opacity: 1;
 }
 .ico_single_team a h3 span {
 	display: block;
@@ -980,25 +980,25 @@ input:focus,select:focus,button:focus{
 	opacity: 1 !important;
 }
 .ico_single_img.ico-one::before {
-	background-image: url("images/team-one.jpeg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("images/team-one.jpeg");
 	background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 }
 .ico_single_img.ico-two::before {
-	background-image: url("images/team-two.jpeg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("images/team-two.jpeg");
 	background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 }
 .ico_single_img.ico-three::before {
-	background-image: url("images/team-three.jpeg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("images/team-three.jpeg");
 	background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 }
 .ico_single_img.ico-four::before {
-	background-image: url("images/team-four.jpeg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("images/team-four.jpeg");
 	background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
