@@ -820,7 +820,7 @@ input:focus,select:focus,button:focus{
         ==Start ICO Service CSS==
 --------------------------------------------- */
 .ico_service_area {
-	background: #263473;
+	background: #ffffff;
 	text-align: center;
 }
 .ico_single_ser_img {
@@ -840,7 +840,7 @@ input:focus,select:focus,button:focus{
 }
 .ico_single_ser {
 	font-size: 16px;
-	color: #e6e6e6;
+	color: #222222;
 	padding: 0px 15px;
 }
 /* ---------------------------------------------
@@ -905,7 +905,7 @@ input:focus,select:focus,button:focus{
         ==Start Team CSS==
 --------------------------------------------- */
 .ico_team_area {
-	background: #263473;
+	background: #ffffff;
 }
 .ico_single_team {
 	text-align: center;
