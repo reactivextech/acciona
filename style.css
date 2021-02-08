@@ -1238,7 +1238,7 @@ background-size: cover;
 	text-align: center;
 	position: relative;
 	z-index: 1;
-	height: 400px;
+	padding: 130px 0px 140px;
 }
 .sn_pg_ftr_inner {
 	top: 50%;
@@ -1252,7 +1252,7 @@ background-size: cover;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #081f36;
+	background: #263473;
 	transform: scale(0);
 	z-index: -1;
 }
@@ -1273,7 +1273,7 @@ background-size: cover;
 }
 .sn_pg_feature h3 {
 	font-size: 18px;
-	color: #fff;
+	color: #FACC0B;
 	text-transform: uppercase;
 	font-weight: 600;
 	margin-bottom: 16px;
