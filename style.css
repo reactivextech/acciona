@@ -250,8 +250,9 @@ input:focus,select:focus,button:focus{
 	z-index: 2;
 }
 .is-sticky .header_area {
-    background: #0D243B;
+    background: #263461;
     z-index: 99 !important;
+	box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
 }
 .is-sticky .header_area .mainmenu ul > li > a{
     line-height: 80px;
@@ -823,6 +824,10 @@ input:focus,select:focus,button:focus{
 	background: #263473;
 	text-align: center;
 }
+.ico_service_area.about-n {
+	background: #263461;
+	text-align: center;
+}
 .ico_single_ser_img {
 	height: 70px;
 	display: inline-block;
@@ -1011,7 +1016,7 @@ background-size: cover;
         ==Start Footer CSS==
 --------------------------------------------- */
 .footer_areo {
-	background-color: #0D243B;
+	background-color: #263461;
 	text-align: center;
 }
 .footer_top_areo {

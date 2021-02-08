@@ -250,8 +250,9 @@ input:focus,select:focus,button:focus{
 	z-index: 2;
 }
 .is-sticky .header_area {
-    background: #0D243B;
+    background: #263473;
     z-index: 99 !important;
+	box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
 }
 .is-sticky .header_area .mainmenu ul > li > a{
     line-height: 80px;
@@ -820,7 +821,11 @@ input:focus,select:focus,button:focus{
         ==Start ICO Service CSS==
 --------------------------------------------- */
 .ico_service_area {
-	background: #ffffff;
+	background: #F8F8FA;
+	text-align: center;
+}
+.ico_service_area.about-n {
+	background: #FFFFFF;
 	text-align: center;
 }
 .ico_single_ser_img {
@@ -905,7 +910,7 @@ input:focus,select:focus,button:focus{
         ==Start Team CSS==
 --------------------------------------------- */
 .ico_team_area {
-	background: #ffffff;
+	background: #F8F8FA;
 }
 .ico_single_team {
 	text-align: center;
@@ -1011,7 +1016,7 @@ background-size: cover;
         ==Start Footer CSS==
 --------------------------------------------- */
 .footer_areo {
-	background-color: #0D243B;
+	background-color: #263473;
 	text-align: center;
 }
 .footer_top_areo {
