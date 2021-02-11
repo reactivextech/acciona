@@ -432,6 +432,9 @@
     -o-transform: scale(1.5);
 }
 }
+.header-top.pd-0 {
+  padding: 0;
+}
 .pt-120 {
   padding-top: 120px;
 }
