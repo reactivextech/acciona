@@ -154,7 +154,7 @@
   background-color: transparent;
 }
 .transparent--header.menu-fixed .header-bottom {
-  background-color: #4d22d7;
+  background-color: #2D56A3;
 }
 .header--fixed {
   position: fixed;
@@ -1452,6 +1452,7 @@ div[class*="col"]:nth-child(5) .feature-item.item--style2 .icon {
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
+  height: 20em;
 }
 .offer-item:hover {
   background-image: -moz-linear-gradient( 90deg, rgb(59,38,219) 1%, rgb(45,86,163) 100%);
@@ -2098,9 +2099,9 @@ div[class*="col"]:nth-child(5) .feature-item.item--style2 .icon {
 .user-wrapper .icon {
   width: 108px;
   height: 108px;
-  background-image: -moz-linear-gradient( 90deg, rgb(59,38,219) 1%, rgb(123,25,203) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(59,38,219) 1%, rgb(123,25,203) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(59,38,219) 1%, rgb(123,25,203) 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(59,38,219) 1%, rgb(45,86,163) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(59,38,219) 1%, rgb(45,86,163) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(59,38,219) 1%, rgb(45,86,163) 100%);
   box-shadow: 0px 5px 5px 0px rgba(59, 38, 219, 0.4);
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -3136,6 +3137,21 @@ div[class*="col"]:nth-child(5) .feature-item.item--style2 .icon {
 .partner-single-inner {
   background-color: #f5f7ff;
   box-shadow: 0px 5px 10px 0px rgba(35, 35, 35, 0.2);
+  min-height: 80px;
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.partner-single-inner2 {
+  
+  
   min-height: 80px;
   margin: 5px;
   display: flex;
@@ -6564,6 +6580,24 @@ textarea:-ms-input-placeholder {
   font-size: 28px;
   color: var(--main-color);
 }
+
+.contest-details-wrapper .single-item .prize-list2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contest-details-wrapper .single-item .prize-list2 li {
+  font-weight: 600;
+  width: 100%;
+}
+.contest-details-wrapper .single-item .prize-list2 li p {
+  color: #787b9a;
+  font-size: 24px;
+}
+.contest-details-wrapper .single-item .prize-list2 li span {
+  font-size: 28px;
+  color: var(--main-color);
+}
+
 /* contest-section css end */
 
 /* section css start */
@@ -7239,7 +7273,7 @@ a[class*='lightcase-icon-'].lightcase-icon-close {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid rgb(124, 124, 124);
+  border: 1px solid rgb(253, 253, 253);
   border-radius: 999px;
   -webkit-border-radius: 999px;
   -moz-border-radius: 999px;
@@ -7533,3 +7567,7 @@ a[class*='lightcase-icon-'].lightcase-icon-close {
 }
 
 /* preloader css end */
+
+.iconcolor{
+  color:#2D56A3;
+}
