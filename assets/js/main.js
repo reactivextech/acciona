@@ -404,9 +404,13 @@
       max: 50000,
       slide: function( event, ui ) {
         $( "#basic-amount" ).val( "$" + ui.value );
+        $( "#pd1" ).val( "$" + ($( "#slider-range-min-one" ).slider( "value" ) * 0.02) );
+        $( "#pm1" ).val( "$" + (($( "#slider-range-min-one" ).slider( "value" ) * 0.02)*30) );
       }
     });
     $( "#basic-amount" ).val( "$" + $( "#slider-range-min-one" ).slider( "value" ) );
+    $( "#pd1" ).val( "$" + ($( "#slider-range-min-one" ).slider( "value" ) * 0.02) );
+    $( "#pm1" ).val( "$" + (($( "#slider-range-min-one" ).slider( "value" ) * 0.02)*30) );
   } );
 
   $( function() {
@@ -417,9 +421,13 @@
       max: 50000,
       slide: function( event, ui ) {
         $( "#satandard-amount" ).val( "$" + ui.value );
+        $( "#pd2" ).val( "$" + ($( "#slider-range-min-two" ).slider( "value" ) * 0.03) );
+        $( "#pm2" ).val( "$" + (($( "#slider-range-min-two" ).slider( "value" ) * 0.03)*30) );
       }
     });
     $( "#satandard-amount" ).val( "$" + $( "#slider-range-min-two" ).slider( "value" ) );
+    $( "#pd2" ).val( "$" + ($( "#slider-range-min-two" ).slider( "value" ) * 0.03) );
+    $( "#pm2" ).val( "$" + (($( "#slider-range-min-two" ).slider( "value" ) * 0.03)*30) );
   } );
 
   $( function() {
@@ -430,9 +438,13 @@
       max: 50000,
       slide: function( event, ui ) {
         $( "#premium-amount" ).val( "$" + ui.value );
+        $( "#pd3" ).val( "$" + ($( "#slider-range-min-three" ).slider( "value" ) * 0.04) );
+        $( "#pm3" ).val( "$" + (($( "#slider-range-min-three" ).slider( "value" ) * 0.04)*30) );
       }
     });
     $( "#premium-amount" ).val( "$" + $( "#slider-range-min-three" ).slider( "value" ) );
+    $( "#pd3" ).val( "$" + ($( "#slider-range-min-three" ).slider( "value" ) * 0.04) );
+        $( "#pm3" ).val( "$" + (($( "#slider-range-min-three" ).slider( "value" ) * 0.04)*30) );
   } );
 
   $( function() {
