@@ -453,6 +453,13 @@
   color: var(--main-color);
   font-size: 24px;
 }
+.section-subtitle2 {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-size: 24px;
+  color:#ffbf00;
+}
 .section-title {
   text-transform: uppercase;
 }
@@ -463,6 +470,9 @@
 .section-header.text-white .section-title,
 .section-header.text-white p {
   color: #ffffff;
+}
+.section-header.text-white .section-title2 {
+  color: #ffbf00;
 }
 .section-header .btn-area {
   margin: 30px -10px -10px -10px;

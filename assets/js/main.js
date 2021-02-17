@@ -1,5 +1,76 @@
 (function($){
   "use strict";
+  $(document).ready(function(){
+    var serverUrl = 'https://young-wave-84989.herokuapp.com/rendivalores/';
+	  var encode = 'cmVuZGl2YWxvcmVzOnJlbmRwYXNz';
+    var lang = 'es';
+    var bvcTicker;
+    function getDataInstrument(){
+      //alert('aqui');
+      $.ajax({
+        url: serverUrl + 'bvc',
+        headers: {
+          "Accept-Language": lang,
+          "Authorization": "Basic " + encode
+        },
+        success: function(result){
+          if(result.length > 0){
+            var data = result;
+            bvcTicker = data;
+            //createBVCTable(data)
+            createTicker()
+            console.log('got bvc data');
+          } else {
+            console.log('Connection failure, retrying');
+            getDataInstrument();
+          }
+        },
+        error: function(error){
+          console.log('Error loading data');
+        }
+      });
+    }
+    function createTicker() {
+      var data = _.concat(bvcTicker);
+      var ticker = _.uniqBy(data, 'symbol');
+      ticker.forEach(function(data){
+        var tickerData = document.getElementById("tickerData");
+        var spanTag = document.createElement("span");
+        spanTag.appendChild(document.createTextNode(`${data.displayName}  ${data.value.displayValue} `))
+
+        var spanTag2 = document.createElement("span");
+        if(data.variation.value.value[0] == "-"){
+          spanTag2.setAttribute("class", "color-red");
+
+        } else {
+          spanTag2.setAttribute("style","color:#27fa5e");
+        }
+
+        spanTag2.appendChild(document.createTextNode(data.variation.value.displayValue? data.variation.value.displayValue + "(" + data.variation.percentage.displayValue + ")"+ ' ' :""))
+
+
+        tickerData.appendChild(spanTag)
+        tickerData.appendChild(spanTag2)
+      })
+      var width = $('.ticker-text').width(function(n, newWidth){
+        _width = newWidth;
+      });
+      //ticker
+      var width = $('.ticker-text').width(_width);
+      containerwidth = $('.ticker-container').width(),
+      left = containerwidth;
+      tick()
+    }
+    function tick() {
+      if(--left < -_width){
+          left = containerwidth;
+      }
+      $(".ticker-text").css("margin-left", left + "px");
+      setTimeout(tick, 16);
+    }
+    
+    getDataInstrument();
+  }); // End document ready
 
   jQuery(document).ready(function(e) {
       var img=$('.bg_img');
@@ -7,6 +78,7 @@
         var bg = ('url(' + $(this).data('background') + ')');
         return bg;
       });
+      
   });
 
   //menu options custom affix
@@ -27,6 +99,8 @@
         "opacity" : "0"
         }, 500, function() {
         $(".preloader").css("display","none");
+
+       
     });
 
      // run test on initial page load
@@ -404,9 +478,13 @@
       max: 50000,
       slide: function( event, ui ) {
         $( "#basic-amount" ).val( "$" + ui.value );
+        $( "#pd1" ).val( "$" + ($( "#slider-range-min-one" ).slider( "value" ) * 0.02) );
+        $( "#pm1" ).val( "$" + (($( "#slider-range-min-one" ).slider( "value" ) * 0.02)*30) );
       }
     });
     $( "#basic-amount" ).val( "$" + $( "#slider-range-min-one" ).slider( "value" ) );
+    $( "#pd1" ).val( "$" + ($( "#slider-range-min-one" ).slider( "value" ) * 0.02) );
+    $( "#pm1" ).val( "$" + (($( "#slider-range-min-one" ).slider( "value" ) * 0.02)*30) );
   } );
 
   $( function() {
@@ -417,9 +495,13 @@
       max: 50000,
       slide: function( event, ui ) {
         $( "#satandard-amount" ).val( "$" + ui.value );
+        $( "#pd2" ).val( "$" + ($( "#slider-range-min-two" ).slider( "value" ) * 0.03) );
+        $( "#pm2" ).val( "$" + (($( "#slider-range-min-two" ).slider( "value" ) * 0.03)*30) );
       }
     });
     $( "#satandard-amount" ).val( "$" + $( "#slider-range-min-two" ).slider( "value" ) );
+    $( "#pd2" ).val( "$" + ($( "#slider-range-min-two" ).slider( "value" ) * 0.03) );
+    $( "#pm2" ).val( "$" + (($( "#slider-range-min-two" ).slider( "value" ) * 0.03)*30) );
   } );
 
   $( function() {
@@ -430,9 +512,13 @@
       max: 50000,
       slide: function( event, ui ) {
         $( "#premium-amount" ).val( "$" + ui.value );
+        $( "#pd3" ).val( "$" + ($( "#slider-range-min-three" ).slider( "value" ) * 0.04) );
+        $( "#pm3" ).val( "$" + (($( "#slider-range-min-three" ).slider( "value" ) * 0.04)*30) );
       }
     });
     $( "#premium-amount" ).val( "$" + $( "#slider-range-min-three" ).slider( "value" ) );
+    $( "#pd3" ).val( "$" + ($( "#slider-range-min-three" ).slider( "value" ) * 0.04) );
+        $( "#pm3" ).val( "$" + (($( "#slider-range-min-three" ).slider( "value" ) * 0.04)*30) );
   } );
 
   $( function() {
@@ -600,6 +686,6 @@ $('.faq-header').on('click',function(e) {
     $(".testimonial-single").mouseenter(function() {
       return $(this).addClass("active").siblings().removeClass("active");
     });
-
-
+    
+    
 })(jQuery);
