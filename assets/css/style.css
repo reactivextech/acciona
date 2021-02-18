@@ -211,6 +211,14 @@
   display: block;
   font-size: 36px;
   line-height: 1;
+  margin: 5px 0 5px;
+}
+@media (max-width: 1199px) {
+  .site-logo,
+.site-title {
+  margin: 0;
+  width: 2.2em;
+}
 }
 .site-title::first-letter {
   color: var(--main-color);
@@ -219,8 +227,8 @@
 li.menu_has_children:after {
   position: absolute;
   content: "\f107";
-  top: 30px;
-  right: 10px;
+  top: 29px;
+  right: 4px;
   color: #333745;
   font-family: 'FontAwesome';
   z-index: -10;
@@ -241,7 +249,7 @@ li.menu_has_children:hover:after {
 }
 .main-menu li a {
   text-transform: uppercase;
-  padding: 29px 25px;
+  padding: 29px 18px;
   display: inline-block;
   font-size: 16px;
   color: var(--font-color);
@@ -1497,6 +1505,7 @@ div[class*="col"]:nth-child(5) .feature-item.item--style2 .icon {
 .offer-item .content p {
   margin-top: 5px;
   margin-bottom: 15px;
+  font-size: 15px;
 }
 .offer-item:hover .content .title,
 .offer-item:hover .content p {
@@ -3585,6 +3594,7 @@ div[class*="col"]:nth-child(5) .feature-item.item--style2 .icon {
 .blog-single-details ul li {
   padding-left: 28px;
   position: relative;
+  font-size: 20px;
 }
 .blog-single-details ul li::before {
   position: absolute;
@@ -6542,7 +6552,7 @@ textarea:-ms-input-placeholder {
   position: absolute;
   content: '';
   top: 50%;
-  right: 0;
+  right: -10PX;
   width: 2px;
   height: 105px;
   background-color: rgb(50, 54, 57);
@@ -6555,12 +6565,18 @@ textarea:-ms-input-placeholder {
 .contest-details-wrapper .single-item.w-2{
   width: 25%;
 }
+.contest-details-wrapper .single-item.w-2 h3{
+  font-size: 15px;
+}
 .contest-details-wrapper .single-item .title {
   margin-bottom: 20px;
 }
+.contest-details-wrapper .single-item .title .icon .fa-3x {
+  font-size: 55px !important;
+}
 .contest-details-wrapper .single-item .time,
 .contest-details-wrapper .single-item .content-name {
-  font-size: 28px;
+  font-size: 19px;
   font-weight: 600;
   color: var(--main-color);
 }
@@ -6591,7 +6607,7 @@ textarea:-ms-input-placeholder {
 }
 .contest-details-wrapper .single-item .prize-list2 li p {
   color: #787b9a;
-  font-size: 24px;
+  font-size: 19px;
 }
 .contest-details-wrapper .single-item .prize-list2 li span {
   font-size: 28px;
@@ -7230,8 +7246,8 @@ textarea:-ms-input-placeholder {
   height: 55px;
   width: 55px;
   position: fixed;
-  bottom: 5%;
-  right: 5%;
+  bottom: 3%;
+  right: 2%;
   display: none;
   z-index: 99;
   cursor: pointer;
@@ -7466,7 +7482,7 @@ a[class*='lightcase-icon-'].lightcase-icon-close {
 
 .preloader .preloader-box div {
   position: relative;
-  width: 30px;
+  width: 300px;
   height: 30px;
   float: left;
   text-align: center;
@@ -7579,7 +7595,7 @@ a[class*='lightcase-icon-'].lightcase-icon-close {
 }
 
 .loader {
-  width: 350px;
+  width: 600px;
   height: 50px;
   line-height: 50px;
   text-align: center;
@@ -7592,6 +7608,7 @@ a[class*='lightcase-icon-'].lightcase-icon-close {
   font-weight: 900;
   color: #ffffff;
   letter-spacing: 0.2em;
+  font-size: 30px;
 }
 .loader::before, .loader::after {
   content: "";
@@ -7664,4 +7681,6 @@ a[class*='lightcase-icon-'].lightcase-icon-close {
 .bg-color-azul{
   background-color: #2D56A3 !important
 }
-
+.user-members {
+  margin: 10px;
+}

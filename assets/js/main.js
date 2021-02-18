@@ -316,6 +316,7 @@
     responsiveClass:true,
     dots: false,
     center: true,
+    items: 4,
     navText : ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
     responsive:{
         0:{
@@ -328,13 +329,14 @@
             center: false,
         },
         992:{
-            items:2,
+            items:3,
             nav:true,
             center: false,
         },
         1200:{
-          items:3,
+          items:4,
           nav:true,
+          center: false,
         }
     }
   });
