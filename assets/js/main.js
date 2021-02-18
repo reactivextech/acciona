@@ -4,6 +4,9 @@
     var serverUrl = 'https://young-wave-84989.herokuapp.com/rendivalores/';
 	  var encode = 'cmVuZGl2YWxvcmVzOnJlbmRwYXNz';
     var lang = 'es';
+    var _width;
+    var left;
+    var containerwidth;
     var bvcTicker;
     function getDataInstrument(){
       //alert('aqui');
@@ -39,8 +42,9 @@
         spanTag.appendChild(document.createTextNode(`${data.displayName}  ${data.value.displayValue} `))
 
         var spanTag2 = document.createElement("span");
+
         if(data.variation.value.value[0] == "-"){
-          spanTag2.setAttribute("class", "color-red");
+          spanTag2.setAttribute("style", "color:#ef5350");
 
         } else {
           spanTag2.setAttribute("style","color:#27fa5e");

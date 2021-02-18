@@ -4,8 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Behoof - Isometric Investment Website HTML Templates</title>
+  <title>ACCIONA - Casa de Valores</title>
   <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="assets/css/fontawesome.min.css">
   <link rel="stylesheet" href="assets/css/icofont.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -21,59 +28,60 @@
 
   <!-- preloader start -->
   <div class="preloader">
-    <div class="preloader-box">
-      <div>L</div>
-      <div>O</div>
+    <!-- <div class="preloader-box">
       <div>A</div>
-      <div>D</div>
+      <div>C</div>
+      <div>C</div>
       <div>I</div>
+      <div>O</div>
       <div>N</div>
-      <div>G</div>
-    </div>
+      <div>A</div>
+    </div> -->
+    <div class="loader">¡ACCIONA TU futuro HOY!</div>
   </div>
   <!-- preloader end -->
 
     <!-- signin-area start -->
-<div class="modal fade" id="signInModal" tabindex="-1" role="dialog"  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content bdr-radius">
-      <div class="signin-wrapper">
-        <div class="signin-wrapper-header text-center">
-          <div class="logo"><img src="assets/images/elements/logo-icon.png" alt="image"></div>
-          <h3 class="title">Login with</h3>
-          <p>Welcome back, please sign in below</p>
-        </div>
-        <form class="signin-form">
-          <div class="form-group">
-            <label for="signinEmail">Email*</label>
-            <input type="email" class="form-control" id="signinEmail" placeholder="Enter your Email">
-          </div>
-          <div class="form-group">
-            <label for="signinPass">Password*</label>
-            <input type="password" class="form-control" id="signinPass" placeholder="Password">
-          </div>
-          <div class="form-group">
-            <div class="custom-checkbox">
-              <input type="checkbox" name="id-1" id="id-1" checked>
-              <label for="id-1">Remember Password</label>
-              <span class="checkbox"></span>
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bdr-radius">
+          <div class="signin-wrapper">
+            <div class="signin-wrapper-header text-center">
+              <div class="logo"><img src="assets/images/elements/logo-icon.png" alt="image"></div>
+              <h3 class="title">Iniciar Sesión</h3>
+              <p>Bienvenido al area de miembros, inicie sesion</p>
+            </div>
+            <form class="signin-form">
+              <div class="form-group">
+                <label for="signinEmail">Email*</label>
+                <input type="email" class="form-control" id="signinEmail" placeholder="Ingrese su email">
+              </div>
+              <div class="form-group">
+                <label for="signinPass">Password*</label>
+                <input type="password" class="form-control" id="signinPass" placeholder="Ingrese su contraseña">
+              </div>
+              <div class="form-group">
+                <div class="custom-checkbox">
+                  <input type="checkbox" name="id-1" id="id-1" checked>
+                  <label for="id-1">Recuperar Contraseña</label>
+                  <span class="checkbox"></span>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-hover">Acceder</button>
+            </form>
+            <div class="signin-wrapper-footer">
+              <p class="bottom-text">No tiene cuenta? <a href="#0" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal" aria-label="Close">Registrate</a></p>
+              <div class="divider"><span>ó</span></div>
+              <ul class="social-list">
+                <li><a href="#0"><i class="fa fa-facebook-f"></i></a></li>
+                <li><a href="#0"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#0"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary btn-hover">Log In</button>
-        </form>
-        <div class="signin-wrapper-footer">
-          <p class="bottom-text">Don’t have an account? <a href="#0" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal" aria-label="Close">Sign Up Now</a></p>
-          <div class="divider"><span>or</span></div>
-          <ul class="social-list">
-            <li><a href="#0"><i class="fa fa-facebook-f"></i></a></li>
-            <li><a href="#0"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#0"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
         </div>
       </div>
     </div>
-  </div>
-</div>
 <!-- signin-area end -->
 
 <!-- signup-area start -->
@@ -83,17 +91,17 @@
       <div class="signin-wrapper">
         <div class="signin-wrapper-header text-center">
           <div class="logo"><img src="assets/images/elements/logo-icon.png" alt="image"></div>
-          <h3 class="title">Login with</h3>
-          <p>Welcome back, please sign in below</p>
+          <h3 class="title">Registro</h3>
+          <p>Completa los datos a continuación</p>
         </div>
         <form class="signin-form">
           <div class="form-group">
             <label for="signinEmail">Email*</label>
-            <input type="email" class="form-control" id="signupEmail" placeholder="Enter your Email">
+            <input type="email" class="form-control" id="signupEmail" placeholder="Ingrese su email">
           </div>
           <div class="form-group">
             <label for="signinPass">Password*</label>
-            <input type="password" class="form-control" id="signupPass" placeholder="Password">
+            <input type="password" class="form-control" id="signupPass" placeholder="Ingrese su contraseña">
           </div>
           <div class="form-group">
             <label for="signinPass">Confirm Password*</label>
@@ -102,15 +110,15 @@
           <div class="form-group">
             <div class="custom-checkbox">
               <input type="checkbox" name="id-2" id="id-2" checked>
-              <label for="id-2">I do not want to be kept up to date about relevant investment opportunities, features, and events</label>
+              <label for="id-2">No quiero que me mantengan actualizado sobre oportunidades, características y eventos de inversión relevantes.</label>
               <span class="checkbox"></span>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary btn-hover">Log In</button>
+          <button type="submit" class="btn btn-primary btn-hover">Iniciar Sesión</button>
         </form>
         <div class="signin-wrapper-footer">
-          <p class="bottom-text">Already have an account?<a href="#0" data-toggle="modal" data-target="#signInModal" data-dismiss="modal" aria-label="Close">Login</a></p>
-          <div class="divider"><span>or</span></div>
+          <p class="bottom-text">¿Tienes cuenta?<a href="#0" data-toggle="modal" data-target="#signInModal" data-dismiss="modal" aria-label="Close">Accede</a></p>
+          <div class="divider"><span>ó</span></div>
           <ul class="social-list">
             <li><a href="#0"><i class="fa fa-facebook-f"></i></a></li>
             <li><a href="#0"><i class="fa fa-twitter"></i></a></li>
@@ -125,87 +133,135 @@
 
     <!--  header-section start  -->
     <header class="header-section transparent--header header--fixed">
-        <div class="header-top">
-            <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-lg-6 col-md-6">
-                <div class="header-top-left d-flex">
-                    <div class="support-part">
-                        <a href="tel:+88016558888454"><i class="fa fa-headphones"></i>Support</a>
-                    </div>
-                    <div class="email-part">
-                        <a href="mailto:info@behoof.com"><i class="fa fa-envelope"></i>info@behoof.com</a>
-                    </div>
-                </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="header-top-right d-flex align-items-center justify-content-end">
-                        <div class="language-part">
-                        <i class="fa fa-globe"></i>
-                        <select>
-                            <option>Eng</option>
-                            <option>Ban</option>
-                            <option>Rus</option>
-                            <option>Arb</option>
-                        </select>
-                        </div>
-                        <div class="header-cart-count">
-                          <a href="checkout.html">
-                            <i class="fa fa-shopping-cart"></i>
-                            <span>My cart (0)</span>
-                          </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
+      <div class="header-top pd-0">
+
+        <div class="bg-color-azul ticker-container">
+          <div class="ticker-text" id="tickerData"></div><!--/container-->
         </div>
+          <!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+              {
+                  "symbols": [
+                  {
+                      "proName": "FOREXCOM:SPXUSD",
+                      "title": "S&P 500"
+                  },
+                  {
+                      "proName": "FOREXCOM:NSXUSD",
+                      "title": "Nasdaq 100"
+                  },
+                  {
+                      "proName": "FX_IDC:EURUSD",
+                      "title": "EUR/USD"
+                  },
+                  {
+                      "proName": "BITSTAMP:BTCUSD",
+                      "title": "BTC/USD"
+                  },
+                  {
+                      "proName": "BITSTAMP:ETHUSD",
+                      "title": "ETH/USD"
+                  },
+                  {
+                      "description": "DASH/USD",
+                      "proName": "KRAKEN:DASHUSD"
+                  }
+                  ],
+                  "showSymbolLogo": true,
+                  "colorTheme": "light",
+                  "isTransparent": false,
+                  "displayMode": "adaptive",
+                  "locale": "es"
+              }
+              </script>
+          </div>
+          <!-- TradingView Widget END -->
+  
+        <!-- <div class="container">
+          <div class="row justify-content-between"> -->
+            <!-- <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="header-top-left d-flex">
+                <div class="support-part">
+                    <a href="tel:+88016558888454"><i class="fa fa-headphones"></i>Support</a>
+                </div>
+                <div class="email-part">
+                    <a href="mailto:info@behoof.com"><i class="fa fa-envelope"></i>info@behoof.com</a>
+                </div>
+              </div>
+            </div> -->
+            <!-- <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="header-top-right d-flex align-items-center justify-content-end">
+                    <div class="language-part">
+                      <i class="fa fa-globe"></i>
+                      <select>
+                          <option>Eng</option>
+                          <option>Ban</option>
+                          <option>Rus</option>
+                          <option>Arb</option>
+                      </select>
+                    </div>
+                    <div class="header-cart-count">
+                        <a href="checkout.html">
+                          <i class="fa fa-shopping-cart"></i>
+                          <span>My cart (0)</span>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+          <!-- </div>
+        </div> -->
+      </div>
         <div class="header-bottom">
             <div class="container">
             <nav class="navbar navbar-expand-xl">
-                <a class="site-logo site-title" href="home-one.html"><img src="assets/images/logo2.png" alt="site-logo"></a>
+                <a class="site-logo site-title" href="index.html"><img src="assets/images/logo2.png" alt="site-logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="menu-toggle"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav main-menu ml-auto">
-                    <li class="active menu_has_children"><a href="#0">Home</a>
-                    <ul class="sub-menu">
+                  <ul class="navbar-nav main-menu ml-auto">
+                    <li class="active "><a href="about.html">NOSOTROS</a>
+                    <!-- <ul class="sub-menu">
                         <li><a href="home-one.html">Home One</a></li>
                         <li><a href="home-two.html">Home Two</a></li>
                         <li><a href="home-three.html">Home Three</a></li>
                         <li><a href="home-four.html">Home Four</a></li>
                         <li><a href="home-five.html">Home Five</a></li>
-                    </ul>
+                    </ul> -->
                     </li>
-                    <li><a href="about.html">about</a></li>
-                    <li class="menu_has_children"><a href="#0">Investment</a>
+                    
+                    <li class="menu_has_children"><a href="#0">INVERSIONES</a>
                       <ul class="sub-menu">
-                          <li><a href="investment.html">Investment One</a></li>
-                          <li><a href="investment-two.html">Investment Two</a></li>
-                          <li><a href="investment-single.html">Investment Single</a></li>
+                          <li><a href="#">BOLSA ABIERTA</a></li>
+                          <li><a href="#">BOLSA AGRÍCOLA</a></li>
+                          <li><a href="#">OTROS VALORES NACIONALES</a></li>
+                          <li><a href="#">PAPELES COMERCIALES</a></li>
+                          <li><a href="#">FONDOS MUTUALES</a></li>
+                          <li><a href="#">FINANZAS CORPORATIVAS</a></li>
+                          <li><a href="#">PYMES</a></li>
+                          <li><a href="#">COMMODITIES</a></li>
+                          <li><a href="#">CUENTAS DE CORRETAJE</a></li>
                       </ul>
                     </li>
-                    <li class="menu_has_children"><a href="#0">Pages</a>
+                    <li><a href="#">ESTADOS FINANCIEROS</a></li>
+                    
+                    <!-- <li class="menu_has_children"><a href="#0">PREVENCIÓN</a>
                       <ul class="sub-menu">
-                          <li><a href="affiliate.html">Affiliate</a></li>
-                          <li><a href="checkout.html">Checkout</a></li>
-                          <li><a href="contest.html">Contest</a></li>
-                          <li><a href="error-404.html">404 page</a></li>
-                          <li><a href="help.html">Help Page</a></li>
-                          <li><a href="how-work.html">How Work</a></li>
-                          <li><a href="promotion.html">Promotion</a></li>
-                          <li><a href="security.html">Security</a></li>
+                          <li><a href="#">LEGITIMACIÓN DE CAPITALES</a></li>
+                          
                       </ul>
-                    </li>
-                    <li class="menu_has_children"><a href="#0">blog</a>
+                    </li> -->
+                    <!-- <li class="menu_has_children"><a href="#0">blog</a>
                       <ul class="sub-menu">
                           <li><a href="blog-grid.html">Blog Grid</a></li>
                           <li><a href="blog-list.html">Blog List</a></li>
                           <li><a href="blog-single.html">Blog Single</a></li>
                       </ul>
-                    </li>
-                    <li><a href="contact.html">contact us</a></li>
+                    </li> -->
+                    <li><a href="contact.html">CONTACTENOS</a></li>
                 </ul>
                 <div class="header-join-part">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signInModal">join us</button>
@@ -224,11 +280,11 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="inner-page-content-area">
-                        <h2 class="page-title">about us</h2>
+                        <h2 class="page-title">Sobre ACCIONA</h2>
                         <nav aria-label="breadcrumb" class="page-header-breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="home-one.html">Home</a></li>
-                                <li class="breadcrumb-item">result</li>
+                                <li class="breadcrumb-item"><a href="home-one.html">Inicio</a></li>
+                                <li class="breadcrumb-item">Resultado</li>
                             </ol>
                         </nav>
                     </div>
@@ -679,6 +735,8 @@
   <script src="assets/js/jquery.waypoints.min.js"></script>
   <script src="assets/js/jquery.countup.min.js"></script>
   <script src="assets/js/jquery.paroller.min.js"></script>
+  <!-- Lodash -->
+  <script type="text/javascript" src="assets/js/lodash.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
