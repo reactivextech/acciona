@@ -6669,11 +6669,15 @@ textarea:-ms-input-placeholder {
 /* ready-section css start */
 .ready-content-wrapper {
   padding: 50px 50px;
-  background-image: -moz-linear-gradient( -57deg, rgb(68,65,231) 1%, rgb(78,61,230) 62%, rgb(88,56,228) 99%);
-  background-image: -webkit-linear-gradient( -57deg, rgb(68,65,231) 1%, rgb(78,61,230) 62%, rgb(88,56,228) 99%);
-  background-image: -ms-linear-gradient( -57deg, rgb(68,65,231) 1%, rgb(78,61,230) 62%, rgb(88,56,228) 99%);
   box-shadow: 0px 10px 15px 0px rgba(44, 41, 143, 0.4);
   text-align: center;
+  background-repeat: no-repeat;
+  background-position: 50% 38%;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0, 0,0.3)),url(../images/crowdfonding.jpg);
+}
+.ready-content-wrapper .btn:hover {
+  box-shadow: 0px 10px 15px 0px rgba(44, 41, 143, 0.4);
 }
 .ready-content-wrapper .title {
   text-transform: uppercase;
