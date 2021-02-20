@@ -438,12 +438,19 @@
 .pt-120 {
   padding-top: 120px;
 }
+.pt-250 {
+  padding-top: 250px;
+}
 .pb-120 {
   padding-bottom: 120px;
 }
 .pb-100 {
   padding-bottom: 100px;
 }
+.pr-0 {
+  padding-right: 0;
+}
+
 .section-header {
   margin-bottom: 65px;
 }
