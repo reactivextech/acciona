@@ -12,7 +12,7 @@
     display: none;
   }
   .banner--four .banner-shape img {
-    height: 890px;
+    height: 890px;community-itemcommunity-item
   }
 }
 @media (max-width: 1550px) {
@@ -1014,6 +1014,12 @@
   }
 }
 @media (max-width:440px) {
+  .community-item .content h3 {
+    font-size: 21px;
+  }
+  .ready-content-wrapper {
+    padding: 50px 10px;
+}
   .feature-item .content {
     flex: 0 0 100%;
     padding-left: 0;
