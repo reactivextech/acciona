@@ -404,8 +404,8 @@ li.menu_has_children:hover:after {
   width: 35px;
   height: 20px;
   background: transparent;
-  border-top: 2px solid #F7A813;
-  border-bottom: 2px solid #F7A813;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
   color: var(--primary-color);
   font-size: 0;
   -webkit-transition: all 0.25s ease-in-out;
@@ -420,7 +420,7 @@ li.menu_has_children:hover:after {
   position: absolute;
   top: 50%;
   left: 50%;
-  background: #F7A813;
+  background: #000;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -445,7 +445,7 @@ span.is-active:after {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 span.menu-toggle:hover {
-  color: #F7A813;
+  color: #000;
 }
 span.is-active {
   border-color: transparent;
