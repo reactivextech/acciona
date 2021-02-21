@@ -404,8 +404,8 @@ li.menu_has_children:hover:after {
   width: 35px;
   height: 20px;
   background: transparent;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-top: 2px solid #F7A813;
+  border-bottom: 2px solid #F7A813;
   color: var(--primary-color);
   font-size: 0;
   -webkit-transition: all 0.25s ease-in-out;
@@ -420,7 +420,7 @@ li.menu_has_children:hover:after {
   position: absolute;
   top: 50%;
   left: 50%;
-  background: #000;
+  background: #F7A813;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -445,7 +445,7 @@ span.is-active:after {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 span.menu-toggle:hover {
-  color: #ffb606;
+  color: #F7A813;
 }
 span.is-active {
   border-color: transparent;
@@ -6815,15 +6815,11 @@ textarea:-ms-input-placeholder {
 /* ready-section css start */
 .ready-content-wrapper {
   padding: 50px 50px;
+  background-image: -moz-linear-gradient( -57deg, rgb(68,65,231) 1%, rgb(78,61,230) 62%, rgb(88,56,228) 99%);
+  background-image: -webkit-linear-gradient( -57deg, rgb(68,65,231) 1%, rgb(78,61,230) 62%, rgb(88,56,228) 99%);
+  background-image: -ms-linear-gradient( -57deg, rgb(68,65,231) 1%, rgb(78,61,230) 62%, rgb(88,56,228) 99%);
   box-shadow: 0px 10px 15px 0px rgba(44, 41, 143, 0.4);
   text-align: center;
-  background-repeat: no-repeat;
-  background-position: 50% 38%;
-  background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0, 0,0.3)),url(../images/crowdfonding.jpg);
-}
-.ready-content-wrapper .btn:hover {
-  box-shadow: 0px 10px 15px 0px rgba(44, 41, 143, 0.4);
 }
 .ready-content-wrapper .title {
   text-transform: uppercase;
@@ -7837,30 +7833,6 @@ a[class*='lightcase-icon-'].lightcase-icon-close {
   width: 100%;
   height: 100%;
 }
-<<<<<<< Updated upstream
-
-@media (max-width: 1349px) {
-  .owl-stage-outer h3 {
-    font-size: 24px;
-  }
-  .offer-item .content p {
-    font-size: 13px;
-  }
-}
-@media (max-width: 1199px) {
-  .offer-item {
-    height: 15em;
-  }
-}
-@media (max-width: 992px) {
-  .owl-stage-outer h3 {
-    font-size: 30px;
-  }
-  .offer-item .content p {
-    font-size: 15px;
-  }
-=======
 .pr-18 {
   padding-right: 18px;
->>>>>>> Stashed changes
 }

@@ -169,8 +169,8 @@
      width: 80%;
    }
    .community-section {
-     /* background-image: none!important; */
-     background-image: url("../images/community-bg-movil.png");
+     background-image: none!important;
+     /* background-image: url("../images/community-bg-movil.png"); */
    }
    .community-section .section-header.text-white .section-title {
     color: var(--heading-color);
