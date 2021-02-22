@@ -2,6 +2,7 @@
   "use strict";
   $(document).ready(function(){
     var serverUrl = 'https://young-wave-84989.herokuapp.com/rendivalores/';
+    var serverUrl2 = 'https://untitled-r0qbaqcziew6.runkit.sh/';
 	  var encode = 'cmVuZGl2YWxvcmVzOnJlbmRwYXNz';
     var lang = 'es';
     var _width;
@@ -72,8 +73,21 @@
       $(".ticker-text").css("margin-left", left + "px");
       setTimeout(tick, 16);
     }
+    function getBCVRate(){
+      $.ajax({
+        url: serverUrl,
+        success: function(result){
+				 var tasa = document.getElementById('tasaDolarBCV').innerHTML = result['tasa'];
+			   var fecha = document.getElementById('fechaValorDolarBCV').innerHTML = 'Fecha valor: '+result['fecha'];
+        },
+        error: function(error){
+          console.log('Error loading data from BCV'+JSON.stringify(error));
+        }
+      });
+    }
     
     getDataInstrument();
+    getBCVRate();
   }); // End document ready
 
   jQuery(document).ready(function(e) {

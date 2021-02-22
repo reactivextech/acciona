@@ -3910,6 +3910,123 @@ blockquote p {
   font-weight: 600;
   margin-top: 5px;
 }
+
+
+.author-area01 {
+  margin-top: 50px;
+  padding: 30px 30px;
+  background-color: #2D56A3;
+  /* border: 1px dashed #0500ff; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.author-area01 .thumb {
+  width: 90px;
+  height: 90px;
+  padding: 14px;
+  background-color: #f5e3e3;
+  border: 1px solid #fc8851;
+  display: inline-block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.author-area01 .thumb .thumb-inner {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fc8851;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.author-area01 .content {
+  width: calc(100% - 90px);
+  padding-left: 30px;
+}
+.author-area01 .content h3{
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.author-area01 .content h3 span{
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: x-large;
+}
+.author-area01 .content .name a {
+  text-transform: uppercase;
+}
+.author-area01 .content .designation {
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.author-area02 {
+  margin-top: 50px;
+  padding: 30px 30px;
+  background-color: #F7A813;
+  /* border: 1px dashed #0500ff; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.author-area02 .thumb {
+  width: 90px;
+  height: 90px;
+  padding: 14px;
+  background-color: #f5e3e3;
+  border: 1px solid #fc8851;
+  display: inline-block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.author-area02 .thumb .thumb-inner {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fc8851;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.author-area02 .content {
+  width: calc(100% - 90px);
+  padding-left: 30px;
+}
+.author-area02 .content h3{
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.author-area02 .content h3 span{
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: x-large;
+}
+.author-area02 .content .name a {
+  text-transform: uppercase;
+}
+.author-area02 .content .designation {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+
 .block-title {
   text-transform: uppercase;
   font-weight: 700;
