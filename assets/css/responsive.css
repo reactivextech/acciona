@@ -85,7 +85,7 @@
   }
 }
 @media (max-width:1199px) {
-  .tradingview-widget-container {
+  .community-section .tradingview-widget-container {
     padding: 10px;
   }
   .transparent--header .header-bottom {

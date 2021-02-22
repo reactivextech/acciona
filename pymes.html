@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ACCIONA - Casa de Valores</title>
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/icofont.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/lightcase.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- preloader start -->
+  <div class="preloader">
+    <div class="loader">¡ACCIONA TU FUTURO HOY!</div>
+  </div>
+  <!-- preloader end -->
+
+    <!-- signin-area start -->
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bdr-radius">
+          <div class="signin-wrapper">
+            <div class="signin-wrapper-header text-center">
+              <div class="logo"><img src="assets/images/elements/logo-icon.png" alt="image"></div>
+              <h3 class="title">Iniciar Sesión</h3>
+              <p>Bienvenido al area de miembros, inicie sesion</p>
+            </div>
+            <form class="signin-form">
+              <div class="form-group">
+                <label for="signinEmail">Email*</label>
+                <input type="email" class="form-control" id="signinEmail" placeholder="Ingrese su email">
+              </div>
+              <div class="form-group">
+                <label for="signinPass">Password*</label>
+                <input type="password" class="form-control" id="signinPass" placeholder="Ingrese su contraseña">
+              </div>
+              <div class="form-group">
+                <div class="custom-checkbox">
+                  <input type="checkbox" name="id-1" id="id-1" checked>
+                  <label for="id-1">Recuperar Contraseña</label>
+                  <span class="checkbox"></span>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-hover">Acceder</button>
+            </form>
+            <div class="signin-wrapper-footer">
+              <p class="bottom-text">No tiene cuenta? <a href="#0" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal" aria-label="Close">Registrate</a></p>
+              <div class="divider"><span>ó</span></div>
+              <ul class="social-list">
+                <li><a href="#0"><i class="fa fa-facebook-f"></i></a></li>
+                <li><a href="#0"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#0"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- signin-area end -->
+
+<!-- signup-area start -->
+<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog"  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content bdr-radius">
+      <div class="signin-wrapper">
+        <div class="signin-wrapper-header text-center">
+          <div class="logo"><img src="assets/images/elements/logo-icon.png" alt="image"></div>
+          <h3 class="title">Registro</h3>
+          <p>Completa los datos a continuación</p>
+        </div>
+        <form class="signin-form">
+          <div class="form-group">
+            <label for="signinEmail">Email*</label>
+            <input type="email" class="form-control" id="signupEmail" placeholder="Ingrese su email">
+          </div>
+          <div class="form-group">
+            <label for="signinPass">Password*</label>
+            <input type="password" class="form-control" id="signupPass" placeholder="Ingrese su contraseña">
+          </div>
+          <div class="form-group">
+            <label for="signinPass">Confirm Password*</label>
+            <input type="password" class="form-control" id="signupRePass" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <div class="custom-checkbox">
+              <input type="checkbox" name="id-2" id="id-2" checked>
+              <label for="id-2">No quiero que me mantengan actualizado sobre oportunidades, características y eventos de inversión relevantes.</label>
+              <span class="checkbox"></span>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-hover">Iniciar Sesión</button>
+        </form>
+        <div class="signin-wrapper-footer">
+          <p class="bottom-text">¿Tienes cuenta?<a href="#0" data-toggle="modal" data-target="#signInModal" data-dismiss="modal" aria-label="Close">Accede</a></p>
+          <div class="divider"><span>ó</span></div>
+          <ul class="social-list">
+            <li><a href="#0"><i class="fa fa-facebook-f"></i></a></li>
+            <li><a href="#0"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#0"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- signup-area end -->
+
+    <!--  header-section start  -->
+    <header class="header-section transparent--header header--fixed">
+      <div class="header-top pd-0">
+
+        <div class="bg-color-azul ticker-container">
+          <div class="ticker-text" id="tickerData"></div><!--/container-->
+        </div>
+          <!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+              {
+                  "symbols": [
+                  {
+                      "proName": "FOREXCOM:SPXUSD",
+                      "title": "S&P 500"
+                  },
+                  {
+                      "proName": "FOREXCOM:NSXUSD",
+                      "title": "Nasdaq 100"
+                  },
+                  {
+                      "proName": "FX_IDC:EURUSD",
+                      "title": "EUR/USD"
+                  },
+                  {
+                      "proName": "BITSTAMP:BTCUSD",
+                      "title": "BTC/USD"
+                  },
+                  {
+                      "proName": "BITSTAMP:ETHUSD",
+                      "title": "ETH/USD"
+                  },
+                  {
+                      "description": "DASH/USD",
+                      "proName": "KRAKEN:DASHUSD"
+                  }
+                  ],
+                  "showSymbolLogo": true,
+                  "colorTheme": "light",
+                  "isTransparent": false,
+                  "displayMode": "adaptive",
+                  "locale": "es"
+              }
+              </script>
+          </div>
+          <!-- TradingView Widget END -->
+      </div>
+        <div class="header-bottom">
+            <div class="container">
+            <nav class="navbar navbar-expand-xl">
+                <a class="site-logo site-title" href="index.html"><img src="assets/images/logo2.png" alt="site-logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="menu-toggle"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav main-menu ml-auto">
+                    <li class="active "><a href="about.html">NOSOTROS</a>
+                    <ul class="sub-menu">
+                        <li><a href="home-one.html">Home One</a></li>
+                        <li><a href="home-two.html">Home Two</a></li>
+                        <li><a href="home-three.html">Home Three</a></li>
+                        <li><a href="home-four.html">Home Four</a></li>
+                        <li><a href="home-five.html">Home Five</a></li>
+                    </ul>
+                    </li>
+                    
+                    <li class="menu_has_children"><a href="#0">INVERSIONES</a>
+                      <ul class="sub-menu">
+                          <li><a href="#">BOLSA ABIERTA</a></li>
+                          <li><a href="#">BOLSA AGRÍCOLA</a></li>
+                          <li><a href="#">OTROS VALORES NACIONALES</a></li>
+                          <li><a href="#">PAPELES COMERCIALES</a></li>
+                          <li><a href="#">FONDOS MUTUALES</a></li>
+                          <li><a href="#">FINANZAS CORPORATIVAS</a></li>
+                          <li><a href="#">PYMES</a></li>
+                          <li><a href="#">COMMODITIES</a></li>
+                          <li><a href="#">CUENTAS DE CORRETAJE</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">ESTADOS FINANCIEROS</a></li>
+                    
+                    <!-- <li class="menu_has_children"><a href="#0">PREVENCIÓN</a>
+                      <ul class="sub-menu">
+                          <li><a href="#">LEGITIMACIÓN DE CAPITALES</a></li>
+                          
+                      </ul>
+                    </li> -->
+                    <li class="menu_has_children"><a href="#0" >ACCEDER</a>
+                      <ul class="sub-menu">
+                          <li><a href="#" data-toggle="modal" data-target="#signInModal">Miembros</a></li>
+                          <li><a href="#0" data-toggle="modal" data-target="#signInModal">Empleados</a></li>
+      
+                      </ul>
+                    </li>
+                    <li><a href="contact.html">CONTACTENOS</a></li>
+                </ul>
+              </div>
+            </nav>
+            </div>
+        </div><!-- header-bottom end -->
+    </header>
+    <!--  header-section end  -->
+
+    <!-- inner-page-banner-section start -->
+    <section class="inner-page-banner-section gradient-bg">
+        <div class="illustration-img"><img src="assets/images/inner-page-banner-illustrations/about.png" alt="image-illustration"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="inner-page-content-area">
+                        <h2 class="page-title">PyMEs</h2>
+                        <nav aria-label="breadcrumb" class="page-header-breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="home-one.html">Inicio</a></li>
+                                <li class="breadcrumb-item">PyMEs</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- inner-page-banner-section end -->
+
+    <!-- partner-section start -->
+  <!-- <section class="partner-section pt-120 pb-120">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-xl-6 order-xl-2 order-1 map-bg">
+          <img src="assets/images/elements/nosotros.png" alt="image">
+        </div>
+        <div class="col-lg-6">
+          <div class="section-header text-lg-left text-center">
+            <span class="section-subtitle">¿Quiénes Somos?</span>
+            <h2 class="section-title">ACCIONA Casa de Valores</h2>
+            <p>Establecido en 2020, ACCIONA Casa de Valores es líder nacional en servicios integrales de carácter legal, de inversiones y fiduciario. Con oficinas para atenderle en Caracas, y contamos con oficinas de enlace en Ciudad de Panamá y Miami y con más de 30 colaboradores alrededor del mundo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- partner-section end -->
+
+   <!-- global-section start -->
+   <!-- <section class="global-section">
+    <div class="container-fluid">
+      <div class="row justify-content-end">
+        <div class="col-xl-5 order-xl-1 order-2">
+          <div class="global-content">
+            <div class="section-header">
+              <h2 class="section-title">Nuestra Misión</h2>
+            </div>
+            <p>Administrar y hacer crecer el patrimonio de nuestros clientes mediante una asesoría basada en el conocimiento, la experiencia, la transparencia, la honestidad  y la integridad de un excelente grupo Humano que conforma nuestra organización.</p>
+          </div>
+        </div>
+        <div class="col-xl-6 order-xl-2 order-1">
+          <img src="assets/images/elements/mision.png" alt="image">
+        </div>
+      </div>
+    </div>
+   </section> -->
+   <!-- global-section end -->
+
+   <!-- global-section start -->
+   <!-- <section class="global-section">
+    <div class="container-fluid">
+      <div class="row justify-content-end">
+        <div class="col-xl-6 order-xl-1 order-1">
+          <img src="assets/images/vision.png" alt="image">
+        </div>
+        <div class="col-xl-6 order-xl-2 order-2">
+          <div class="global-content">
+            <div class="section-header">
+              <h2 class="section-title">Nuestra Visión</h2>
+            </div>
+            <p>Seguir siendo reconocidos como una firma que brinda un servicio de asesoría de clase mundial. Manteniendo un sentido de trabajo bajo parámetros de ética y moral intachables siempre en pro de nuestros clientes y de la sociedad en general.</p>
+          </div>
+        </div>
+      </div>
+   </section> -->
+   <!-- global-section end -->
+
+   <!-- valores-section start -->
+  <section class="deposit-withdraw-section pt-120 pb-120">
+    <div class="circle-object"><img src="assets/images/elements/deposit-circle-shape.png" alt="image"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-header text-center">
+            <span class="section-subtitle">Nuestros</span>
+            <h2 class="section-title">Finanzas Corporativas y PyMEs</h2>
+            <!-- <p>Para dar a nuestros clientes la mejor asesoría y satisfacer sus necesidades.</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="feature-item">
+            <div class="icon">
+              <div class="icon-inner">
+                <!-- <img src="assets/images/icons/payment-option/ft1.svg" alt="icon"> -->
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="content">
+              <h3 class="title">	Proyectos de Inversión</h3>
+              <p>Respondemos de forma integral a las preguntas relacionadas a  cuánto se debe invertir y cómo se debe financiar la inversión.</p>
+            </div>
+          </div><!-- feature-item end -->
+          <div class="feature-item">
+            <div class="icon">
+              <div class="icon-inner">
+                <!-- <img src="assets/images/icons/payment-option/ft2.svg" alt="icon"> -->
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="content">
+              <h3 class="title">Fusiones y Adquisiciones</h3>
+              <p>Definimos de manera apropiada los costos y beneficios, a fin de tener un entendimiento claro de cómo se gana con una fusión.</p>
+            </div>
+          </div><!-- feature-item end -->
+          <div class="feature-item">
+            <div class="icon">
+              <div class="icon-inner">
+                <!-- <img src="assets/images/icons/payment-option/ft2.svg" alt="icon"> -->
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="content">
+              <h3 class="title">Valoración De Empresas</h3>
+              <p>Trabajamos con proyecciones y supuestos adecuados, así como con metodologías actualizadas para la estimación de valores.</p>
+            </div>
+          </div><!-- feature-item end -->
+        </div>
+        <div class="col-lg-6 mt-20">
+          <div class="feature-item">
+            <div class="icon">
+              <div class="icon-inner">
+                <!-- <img src="assets/images/icons/payment-option/ft1.svg" alt="icon"> -->
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="content">
+              <h3 class="title">Planes de Negocio</h3>
+              <p>Ayudamos en la definición de los objetivos de su iniciativa empresarial e identificamos las actividades críticas.</p>
+            </div>
+          </div><!-- feature-item end -->
+          <div class="feature-item">
+            <div class="icon">
+              <div class="icon-inner">
+                <!-- <img src="assets/images/icons/payment-option/ft2.svg" alt="icon"> -->
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="content">
+              <h3 class="title">Estudios de Mercado</h3>
+              <p>Estudios de mercado y de entorno económico, adecuados a las necesidades particulares de cada cliente y sus intereses.</p>
+            </div>
+          </div><!-- feature-item end -->
+          <div class="feature-item">
+            <div class="icon">
+              <div class="icon-inner">
+                <!-- <img src="assets/images/icons/payment-option/ft2.svg" alt="icon"> -->
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="content">
+              <h3 class="title">Financiamiento de Capital</h3>
+              <p>Nos especializamos en emisión de papeles comerciales y bonos para el mediano y largo plazo adaptado a tus necesidades.</p>
+            </div>
+          </div><!-- feature-item end -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- valores-section end -->
+
+   <!-- features-section start -->
+  <!-- <section class="features-section pt-120 pb-120">
+    <div class="shape"><img src="assets/images/elements/invest-shape-two.png" alt="image"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-header text-center">
+            <span class="section-subtitle">Our Amazing Features</span>
+            <h2 class="section-title">Investing For Everyone</h2>
+            <p>We are worldwide investment company who are committed to the principle of revenue maximization and reduction of the financial risks at investing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-4">
+          <div class="feature-thumb wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+            <img src="assets/images/elements/features2.png" alt="image">
+          </div>
+        </div>
+        <div class="col-xl-4 offset-md-1">
+          <div class="feature-item wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
+            <div class="icon">
+              <div class="icon-inner">
+                <img src="assets/images/icons/investment/1.svg" alt="icon">
+              </div>
+            </div>
+            <div class="content">
+              <h3 class="title">Sign up in minutes</h3>
+              <p>Open an investment account in minutes and get started with as little as $5.</p>
+              <a href="#0">get strated</a>
+            </div>
+          </div>
+          <div class="feature-item wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+            <div class="icon">
+              <div class="icon-inner">
+                <img src="assets/images/icons/investment/2.svg" alt="icon">
+              </div>
+            </div>
+            <div class="content">
+              <h3 class="title">Investing Made Easy</h3>
+              <p>Choose from three simple starting option - cautious , balanced & adventurous.We’ll take care of the rest!</p>
+              <a href="#0">read more</a>
+            </div>
+          </div>
+          <div class="feature-item wow fadeIn" data-wow-duration="2s" data-wow-delay="0.7s">
+            <div class="icon">
+              <div class="icon-inner">
+                <img src="assets/images/icons/investment/3.svg" alt="icon">
+              </div>
+            </div>
+            <div class="content">
+              <h3 class="title">Build Your Porfolio</h3>
+              <p>We’ll help you pick an investment strategy that reflects your interests,beliefs and goals.</p>
+              <a href="#0">explore our investing </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- features-section end -->
+
+  <!-- footer-section start -->
+  <footer class="footer-section">
+    <div class="footer-top bg_img" data-background="assets/images/footer-bg.png">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-header text-white text-center">
+              <span class="section-subtitle">Suscríbete a</span>
+              <h2 class="section-title">Nuestro Boletín Financiero</h2>
+              <p>¡Únase a más de 2.000 clientes satisfechos con nuestro reporte MAMUT! <a href="#0">Registrate</a> 
+                y Suscríbase a nuestro boletín para recibir las últimas noticias y actualizaciones. </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="subscribe-wrapper">
+              <span class="icon wow zoomIn" data-wow-duration="0.3s" data-wow-delay="0.5s"><img src="assets/images/icons/subscribe.png" alt="icon"></span>
+              <form class="subscribe-form">
+                <input type="text" name="subs_name" id="subs_name" placeholder="Tu dirección de correo">
+                <button type="submit" class="subs-btn">Suscríbirse<span class="btn-icon"><img src="assets/images/icons/paper-plane.png" alt="icon"></span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-none-30">
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget mb-30">
+              <h3 class="widget-title">Sobre ACCIONA</h3>
+              <ul class="footer-menu-list">
+                <li><a href="#0">Nosotros</a></li>
+                <li><a href="#0">Contactanos</a></li>
+                <li><a href="#0">Ultimas Noticias</a></li>
+                <li><a href="#0">Garantía de autenticidad</a></li>
+                <li><a href="#0">Valoraciones de nuestros clientes</a></li>
+                <li><a href="#0">Política de privacidad</a></li>
+                <li><a href="#0">Licencia de negocios</a></li>
+              </ul>
+            </div>
+          </div><!-- footer-widget end -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget mb-30">
+              <h3 class="widget-title">Mi cuenta</h3>
+              <ul class="footer-menu-list">
+                <li><a href="#0">Gestiona tu cuenta</a></li>
+                <li><a href="#0">Cómo depositar</a></li>
+                <li><a href="#0">Cómo retirar</a></li>
+                <li><a href="#0">Verificación de la cuenta</a></li>
+                <li><a href="#0">Seguridad</a></li>
+                <li><a href="#0">Inversiones</a></li>
+                <li><a href="#0">Membresia</a></li>
+              </ul>
+            </div>
+          </div><!-- footer-widget end -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget mb-30">
+              <h3 class="widget-title">Centro de ayuda</h3>
+              <ul class="footer-menu-list">
+                <li><a href="#0">Asistencia al inversor</a></li>
+                <li><a href="#0">Asesoría a emprendedores</a></li>
+                <li><a href="#0">FAQ</a></li>
+                <li><a href="#0">Guía de inicio rápido</a></li>
+                <li><a href="#0">Asociados</a></li>
+                <li><a href="#0">Tutoriales</a></li>
+                <li><a href="#0">Devoluciones y Reclamos</a></li>
+              </ul>
+            </div>
+          </div><!-- footer-widget end -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget mb-30">
+              <h3 class="widget-title">Información legal</h3>
+              <ul class="footer-menu-list">
+                <li><a href="#0">Advertencias de riesgo</a></li>
+                <li><a href="#0">Aviso de Privacidad</a></li>
+                <li><a href="#0">Seguridad</a></li>
+                <li><a href="#0">Términos de servicio</a></li>
+                <li><a href="#0">Hacerse afiliado</a></li>
+                <li><a href="#0">Política de quejas</a></li>
+              </ul>
+            </div>
+          </div><!-- footer-widget end -->
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="btn-area text-center">
+              <a href="#0" class="wow zoomIn" data-wow-duration="0.3s" data-wow-delay="0.5s"><img src="assets/images/buttons/google.png" alt="button"></a>
+              <a href="#0" class="wow zoomIn" data-wow-duration="0.7s" data-wow-delay="0.5s"><img src="assets/images/buttons/apple.png" alt="button"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="copy-right-text text-md-left text-center mb-md-0 mb-3">Copyright © 2021.All Rights Reserved By <a href="index.html">ACCIONA</a></p>
+          </div>
+          <div class="col-md-6">
+            <div class="card-list text-md-right text-center">
+              <a href="#0"><img src="assets/images/icons/card-options/americanexpress.png" alt="image"></a>
+              <a href="#0"><img src="assets/images/icons/card-options/maestro.png" alt="image"></a>
+              <a href="#0"><img src="assets/images/icons/card-options/visa.png" alt="image"></a>
+              <a href="#0"><img src="assets/images/icons/card-options/paypal.png" alt="image"></a>
+              <a href="#0"><img src="assets/images/icons/card-options/mastercard.png" alt="image"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer-section end -->
+
+  <!-- scroll-to-top start -->
+  <div class="scroll-to-top">
+    <span class="scroll-icon">
+      <i class="fa fa-rocket"></i>
+    </span>
+  </div>
+  <!-- scroll-to-top end --> 
+
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.nice-select.js"></script>
+  <script src="assets/js/lightcase.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/jquery-ui.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/jquery.waypoints.min.js"></script>
+  <script src="assets/js/jquery.countup.min.js"></script>
+  <script src="assets/js/jquery.paroller.min.js"></script>
+  <!-- Lodash -->
+  <script type="text/javascript" src="assets/js/lodash.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
