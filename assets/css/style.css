@@ -3261,9 +3261,9 @@ div[class*="col"]:nth-child(5) .feature-item.item--style2 .icon {
   height: 310px;
   top: 0;
   left: 50%;
-  background-image: -moz-linear-gradient( 90deg, rgb(59,38,219) 47%, rgb(123,25,203) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(59,38,219) 47%, rgb(123,25,203) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(59,38,219) 47%, rgb(123,25,203) 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(59,38,219) 47%, rgb(45,86,163) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(59,38,219) 47%, rgb(45,86,163) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(59,38,219) 47%, rgb(45,86,163) 100%);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -6941,9 +6941,9 @@ textarea:-ms-input-placeholder {
 /* ready-section css start */
 .ready-content-wrapper {
   padding: 50px 50px;
-  background-image: -moz-linear-gradient( -57deg, rgb(68,65,231) 1%, rgb(78,61,230) 62%, rgb(88,56,228) 99%);
-  background-image: -webkit-linear-gradient( -57deg, rgb(68,65,231) 1%, rgb(78,61,230) 62%, rgb(88,56,228) 99%);
-  background-image: -ms-linear-gradient( -57deg, rgb(68,65,231) 1%, rgb(78,61,230) 62%, rgb(88,56,228) 99%);
+  background-image: -moz-linear-gradient( -57deg, rgb(68,65,231) 1%, rgb(45,86,163) 62%, rgb(45,86,163) 99%);
+  background-image: -webkit-linear-gradient( -57deg, rgb(68,65,231) 1%, rgb(45,86,163) 62%, rgb(45,86,163) 99%);
+  background-image: -ms-linear-gradient( -57deg, rgb(68,65,231) 1%, rgb(45,86,163) 62%, rgb(45,86,163) 99%);
   box-shadow: 0px 10px 15px 0px rgba(44, 41, 143, 0.4);
   text-align: center;
 }
