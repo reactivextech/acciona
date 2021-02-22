@@ -7836,3 +7836,9 @@ a[class*='lightcase-icon-'].lightcase-icon-close {
 .pr-18 {
   padding-right: 18px;
 }
+.back-blue {
+  background-color: #0055A7;
+}
+.mt-20 {
+  margin-top: 20px;
+}
