@@ -175,7 +175,7 @@
      /* background-image: none!important; */
      /* background-image: url("../images/community-bg-movil.png"); */
    }
-  .bg-img {
+  .bg_img2 {
     background-image: url("../images/community-bg-movil.png");
   }
    .community-section .section-header.text-white .section-title {
@@ -828,8 +828,11 @@
     max-width: 100%;
     padding-left: 0;
   }
-  .bg-img {
+  .bg_img2 {
     background-image: url("../images/community-bg-movil.png");
+  }
+  .section-header {
+    margin-top: 65px;
   }
   .footer-top .subscribe-wrapper.style--two .subscribe-form {
     display: block;

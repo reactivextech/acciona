@@ -77,11 +77,11 @@
   }); // End document ready
 
   jQuery(document).ready(function(e) {
-      // var img=$('.bg_img');
-      // img.css('background-image', function () {
-      //   var bg = ('url(images/community-bg.png)');
-      //   return bg;
-      // });
+      var img=$('.bg_img');
+      img.css('background-image', function () {
+        var bg = ('url(' + $(this).data('background') + ')');
+        return bg;
+      });
       
   });
 

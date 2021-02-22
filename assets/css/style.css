@@ -2164,6 +2164,10 @@ div[class*="col"]:nth-child(5) .feature-item.item--style2 .icon {
   margin-bottom: -100px;
 }
 /* community-section css end */
+.bg_img2 {
+  background-image: url("../images/community-bg.png");
+  background-repeat: no-repeat;
+}
 
 /* latest-transaction-section css start */
 .latest-transaction-section {
