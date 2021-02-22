@@ -12,7 +12,7 @@
     display: none;
   }
   .banner--four .banner-shape img {
-    height: 890px;community-itemcommunity-item
+    height: 890px;
   }
 }
 @media (max-width: 1550px) {
@@ -371,7 +371,7 @@
     margin-bottom: 45px;
   }
   .community-section {
-    padding-top: 20%;
+    padding-top: 0%;
   }
   
   .user-wrapper {
