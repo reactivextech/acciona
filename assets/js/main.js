@@ -75,7 +75,7 @@
     }
     function getBCVRate(){
       $.ajax({
-        url: serverUrl,
+        url: serverUrl2,
         success: function(result){
 				 var tasa = document.getElementById('tasaDolarBCV').innerHTML = result['tasa'];
 			   var fecha = document.getElementById('fechaValorDolarBCV').innerHTML = 'Fecha valor: '+result['fecha'];
