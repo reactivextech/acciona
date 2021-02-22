@@ -1142,6 +1142,10 @@ span.is-active:after {
   justify-content: center;
   align-items: center;
 }
+.feature-item .icon-inner i {
+  color: #ffffff;
+  font-size: xx-large;
+}
 .feature-item:hover .icon-inner {
   animation: zoomIn 800ms;
   -webkit-animation: zoomIn 800ms;
