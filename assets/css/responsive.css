@@ -172,6 +172,9 @@
      /* background-image: none!important; */
      /* background-image: url("../images/community-bg-movil.png"); */
    }
+  .bg-img {
+    background-image: url("../images/community-bg-movil.png");
+  }
    .community-section .section-header.text-white .section-title {
     /* color: var(--heading-color); */
   }
@@ -381,6 +384,7 @@
   .community-section {
     padding-top: 17%;
   }
+  
   .user-wrapper {
     margin-top: 45px;
   }
@@ -802,6 +806,9 @@
     -ms-flex: 0 0 100%;
     max-width: 100%;
     padding-left: 0;
+  }
+  .bg-img {
+    background-image: url("../images/community-bg-movil.png");
   }
   .footer-top .subscribe-wrapper.style--two .subscribe-form {
     display: block;

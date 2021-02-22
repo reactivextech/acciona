@@ -5907,6 +5907,7 @@ textarea:-ms-input-placeholder {
   position: relative;
 }
 .affiliate-bonus-section .bg_img {
+  
   position: absolute;
   top: 0;
   left: 0;
