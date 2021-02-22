@@ -7970,3 +7970,6 @@ a[class*='lightcase-icon-'].lightcase-icon-close {
 .mt-20 {
   margin-top: 20px;
 }
+.offer-item .content h3 {
+  font-size: 23px;
+}
