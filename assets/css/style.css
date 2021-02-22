@@ -7544,9 +7544,11 @@ a[class*='lightcase-icon-'].lightcase-icon-close {
 
 /* footer-section css start */
 .footer-top {
-  padding-top: 120px;
-  padding-bottom: 85px;
+  padding-top: 97px;
+  padding-bottom: 0px;
   background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .footer-top .section-header p a {
   color: var(--main-color);
