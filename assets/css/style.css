@@ -7977,3 +7977,13 @@ a[class*='lightcase-icon-'].lightcase-icon-close {
 .offer-item .content h3 {
   font-size: 23px;
 }
+.faq-area.crypto .single-faq {
+  box-shadow: none;
+  text-align: center;
+}
+.btn-primary:focus, .btn-primary:active {
+  color: #fff;
+}
+.faq-area.crypto .single-faq .faq-header {
+  display: inline-block;
+}
