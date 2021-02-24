@@ -3920,6 +3920,7 @@ blockquote p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  height: 80%;
 }
 .author-area01 .thumb {
   width: 90px;
@@ -3977,6 +3978,7 @@ blockquote p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  height: 80%;
 }
 .author-area02 .thumb {
   width: 90px;
@@ -4025,7 +4027,9 @@ blockquote p {
   font-weight: 600;
   margin-top: 5px;
 }
-
+.element-img img {
+  width: 50%;
+}
 
 .block-title {
   text-transform: uppercase;

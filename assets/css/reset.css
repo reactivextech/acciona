@@ -10,7 +10,8 @@ font-family: 'Thasadith', sans-serif;
 
 html {
   scroll-behavior: smooth;
-  --main-color: #ff5500;
+  /* --main-color: #ff5500; */
+  --main-color: #F7A813;
   --heading-font: 'Montserrat', sans-serif;
   --heading-color: #323639;
   --font-color: #35315a;
