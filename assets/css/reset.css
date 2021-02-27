@@ -10,11 +10,11 @@ font-family: 'Thasadith', sans-serif;
 
 html {
   scroll-behavior: smooth;
-  /* --main-color: #ff5500; */
-  --main-color: #F7A813;
+  --main-color: #FF6633;
+  /* --main-color: #EA571C; */
   --heading-font: 'Montserrat', sans-serif;
   --heading-color: #323639;
-  --font-color: #35315a;
+  --font-color: #23397D;
   --font-color-two: #4f4f4f;
   --para-font: 'Open Sans', sans-serif;
   --para-color: #484748;

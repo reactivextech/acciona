@@ -373,7 +373,9 @@
   .community-section {
     padding-top: 25%;
   }
-  
+  .offer-item {
+    height: 15em;
+}
   .user-wrapper {
     margin-top: 45px;
   }

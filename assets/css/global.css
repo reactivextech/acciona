@@ -26,9 +26,9 @@
   border: none;
 }
 .btn-primary {
-  background-image: -moz-linear-gradient( 108deg, rgb(59,38,219) 14%, rgb(45,86,163) 100%);
-  background-image: -webkit-linear-gradient( 108deg, rgb(59,38,219) 14%, rgb(45,86,163) 100%);
-  background-image: -ms-linear-gradient( 108deg, rgb(59,38,219) 14%, rgb(45,86,163) 100%);
+  background-image: -moz-linear-gradient( 108deg, rgb(45,86,163) 14%, rgb(35,57,125) 100%);
+  background-image: -webkit-linear-gradient( 108deg, rgb(45,86,163) 14%, rgb(35,57,125) 100%);
+  background-image: -ms-linear-gradient( 108deg, rgb(45,86,163) 14%, rgb(35,57,125) 100%);
   position: relative;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -45,9 +45,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: -moz-linear-gradient( 108deg, rgb(45,86,163) 0%, rgb(59,38,219) 86%);
-  background-image: -webkit-linear-gradient( 108deg, rgb(45,86,163) 0%, rgb(59,38,219) 86%);
-  background-image: -ms-linear-gradient( 108deg, rgb(45,86,163) 0%, rgb(59,38,219) 86%);
+  background-image: -moz-linear-gradient( 108deg, rgb(35,57,125) 0%, rgb(45,86,163) 86%);
+  background-image: -webkit-linear-gradient( 108deg, rgb(35,57,125) 0%, rgb(45,86,163) 86%);
+  background-image: -ms-linear-gradient( 108deg, rgb(35,57,125) 0%, rgb(45,86,163) 86%);
   z-index: -10;
   opacity: 0;
 }
@@ -460,6 +460,9 @@
   color: var(--main-color);
   font-size: 24px;
 }
+.section-subtitle.yell {
+  color: #F7A813;
+}
 .section-subtitle2 {
   font-weight: 600;
   text-transform: uppercase;
@@ -493,9 +496,9 @@
   margin-top: 50px;
 }
 .gradient-bg {
-  background-image: -moz-linear-gradient( 90deg, rgb(59,38,219) 1%, rgb(45,86,163) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(59,38,219) 1%, rgb(45,86,163) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(59,38,219) 1%, rgb(45,86,163) 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(45,86,163) 1%, rgb(35,57,125) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(45,86,163) 1%, rgb(35,57,125) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(45,86,163) 1%, rgb(35,57,125) 100%);
 }
 .mt-30 {
   margin-top: 30px;

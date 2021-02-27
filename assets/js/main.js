@@ -122,9 +122,9 @@
     });
 
      // run test on initial page load
-    //  checkSize();
+    checkSize();
      // run test on resize of the window
-     $(window).resize(checkSize);
+     // $(window).resize(checkSize);
 
     //menu options custom affix
     var fixed_top = $(".header-section");
@@ -142,7 +142,6 @@
   //Function to the css rule
   function checkSize(){
     if (window.matchMedia('(max-width: 1199px)').matches) {
-      // js code for responsive drop-down-menu-item with swing effect
       $(".navbar-collapse>ul>li>a, .navbar-collapse ul.sub-menu>li>a").on("click", function() {
         var element = $(this).parent("li");
         if (element.hasClass("open")) {
