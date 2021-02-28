@@ -1045,6 +1045,9 @@
   .ready-content-wrapper {
     padding: 50px 10px;
 }
+  .offer-item {
+    height: 21em;
+  }
   .feature-item .content {
     flex: 0 0 100%;
     padding-left: 0;
