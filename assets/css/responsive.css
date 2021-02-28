@@ -374,7 +374,7 @@
     padding-top: 25%;
   }
   .offer-item {
-    height: 15em;
+    height: 19em;
 }
   .user-wrapper {
     margin-top: 45px;
@@ -608,6 +608,9 @@
     -webkit-animation: none;
     animation: none;
 }
+  .offer-item {
+    height: 15em;
+  }
   h2, h2>a {
     font-size: 36px;
   }
@@ -767,7 +770,7 @@
     padding-left: 0;
     margin-top: 20px;
   }
-  .main-area > .title {
+  n-area > .title {
     font-size: 28px;
   }
 }
@@ -779,6 +782,9 @@
     margin-bottom: 0;
     padding: 0;
 }
+  .offer-item {
+    height: 16.5em;
+  }
   .choose-us-section.pb-120 {
     padding-bottom: 50px;
   }
