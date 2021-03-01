@@ -177,7 +177,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav main-menu ml-auto">
-                <li class="active "><a href="about.html">NOSOTROS</a>
+                <li><a href="about.html">NOSOTROS</a>
                 </li>
                 <li class="menu_has_children"><a href="#0">INVERSIONES</a>
                   <ul class="sub-menu">
@@ -242,7 +242,7 @@
             </div>
           </div>
           <div class="col-lg-12 contact-form-wrapper">
-            <form class="contact-form" id="contact_form_submit">
+            <form method="POST" class="contact-form" id="contact_form_submit">
               <div class="row">
                 <div class="col-lg-12">
                   <textarea name="message" id="message" placeholder="Mensaje*"></textarea>
@@ -260,7 +260,7 @@
                   <input type="text" name="subject" id="subject" placeholder="Compañia (opcional)">
                 </div>
                 <div class="col-lg-12 text-center">
-                  <button type="submit" class="btn btn-primary" title="Envia tu mensaje!">Enviar Ahora</button>
+                  <button type="submit" class="btn btn-primary" title="Envia tu mensaje!" name="enviar" onclick="javascript:enviar_correo();">Enviar Ahora</button>
                 </div>
               </div>
             </form>
@@ -429,5 +429,44 @@
 <script type="text/javascript" src="assets/js/lodash.min.js"></script>
   <script src="assets/js/contact.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    function enviar_correo(){
+      var correo = new FormData();
+
+      correo.append("nombre", document.getElementById("name").value);
+      correo.append("correo", document.getElementById("email").value);
+      correo.append("telefono", document.getElementById("phone").value);
+      correo.append("empresa", document.getElementById("subject").value);
+      correo.append("mensaje", document.getElementById("message").value);
+
+      $.ajax({
+        url: "contact.php",
+        type:"POST",
+        data: correo,
+        cache:false,
+        contentType: false,
+        processData: false,
+        success: function(resp){
+          console.log(resp);
+          msj=JSON.parse(resp);
+          alert(msj.mensaje);
+        }
+      });
+
+    }
+    </script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5fb557ea920fc91564c84570/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
 </html>
