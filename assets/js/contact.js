@@ -1,4 +1,4 @@
-(function ($) {
+(function enviar_correo() {
     "use strict";
 
     jQuery(document).ready(function ($) {

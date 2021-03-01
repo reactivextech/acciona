@@ -214,13 +214,13 @@
   margin: 5px 0 5px;
 }
 .site-logo img {
-  width: 3em;
+  width: 5em;
 }
 @media (max-width: 1199px) {
   .site-logo,
 .site-title {
   margin: 0;
-  width: 2.2em;
+  width: 4.2em;
 }
 }
 .site-title::first-letter {
@@ -434,6 +434,13 @@ li.menu_has_children:hover:after {
   -moz-transition: -webkit-transform 0.25s ease-in-out;
   -ms-transition: -webkit-transform 0.25s ease-in-out;
 }
+/* .transparent--header .menu-toggle {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+.transparent--header .menu-toggle:before, .menu-toggle:after {
+  background: #fff;
+} */
 span.is-active {
   border-color: transparent;
 }
