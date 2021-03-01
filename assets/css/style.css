@@ -1511,7 +1511,7 @@ div[class*="col"]:nth-child(5) .feature-item.item--style2 .icon {
   flex: 0 0 calc(100% - 50px);
   -ms-flex: 0 0 calc(100% - 50px);
   max-width: calc(100% - 50px);
-  padding-left: 16px;
+  padding-left: 10px;
 }
 .offer-item .content .title {
   text-transform: uppercase;
@@ -7986,7 +7986,7 @@ a[class*='lightcase-icon-'].lightcase-icon-close {
   margin-top: 20px;
 }
 .offer-item .content h3 {
-  font-size: 23px;
+  font-size: 20px;
 }
 .faq-area.crypto .single-faq {
   box-shadow: none;
@@ -7997,4 +7997,15 @@ a[class*='lightcase-icon-'].lightcase-icon-close {
 }
 .faq-area.crypto .single-faq .faq-header {
   display: inline-block;
+}
+.display-block-auto {
+  display: block;
+  margin: auto;
+}
+.m-auto-flex {
+  margin: auto;
+  display: flex;
+}
+.contest-winner-section h2 {
+  font-size: 55px;
 }
