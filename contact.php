@@ -9,14 +9,14 @@
 
           if (empty($correo)){ // Validar si la dirección de correo no esta vacia
             $error=1;
-            $mensaje="Correo electrónico vacío.";
+            $mensaje="Por favor complete todos los campos del formulario.";
             $datos=0;
           } else {
 
-            $usuario_mail="soporte@accionacb.com"; // Direccion de envio
-            $remite = "Formulario de mi website"; //Nombre de Quien remite o envia
+            $usuario_mail="info@accionacb.com"; // Direccion de envio
+            $remite = "www.accionacb.com"; //Nombre de Quien remite o envia
             $remite_email = "no-reply@accionacb.com";
-            $asunto = "Se envío un correo de contacto desde el $remite";
+            $asunto = "Correo de contacto desde $remite";
 
             // Armar un mensaje html para el cuerpo del correo electrónico
             $mensaje = "<!doctype html>
@@ -24,7 +24,7 @@
             <title>Han enviado los siguientes comentarios!</title>
             </head>
             <body>
-            <h1>Contacto desde el sitio www.puvel.com.mx (Punto de Venta en Línea)</h1>
+            <h1>Contacto desde www.accionacb.com <br clear='all'/>(En línea)</h1><br clear='all'/>
             Nombre: ".$nombre." <br clear='all'/>
             Correo: ".$correo." <br clear='all'/>
             Teléfono: ".$telefono." <br clear='all'/>
@@ -41,14 +41,13 @@
 
             if($enviar_email) { // Envío exitoso
               $error=0;
-              $mensaje="Correo enviado";
+              $mensaje="Correo enviado, le estaremos respondiendo a la brevedad posible.";
               $datos=0;
             }else { // No se pudo enviar el correo
               $error=1;
-              $mensaje="El correo no fue enviado";
+              $mensaje="El correo no pudo ser enviado, intente nuevamente.";
               $datos=0;
             }
-
           }
 
         // Empaquetado de la respuesta en formato JSON
