@@ -45,3 +45,40 @@
     })
 
 }(jQuery));
+
+(function enviar_newsletter() {
+    "use strict";
+
+    jQuery(document).ready(function ($) {
+        $(document).on('submit', '#subscribe-form', function (e) {
+            e.preventDefault();
+            var newsletter = $('#newsletter').val();
+
+            if (newsletter) {
+                $.ajax({
+                    type: "POST",
+                    url: '../../newsletter.php',
+                    data: {
+                        'newsletter': newsletter,
+                    },
+                    success: function (data) {
+                        $('#subscribe-form').children('.email-success').remove();
+                        $('#subscribe-form').prepend('<span class="alert alert-success email-success">' + data + '</span>');
+                        $('#newsletter').val('');
+                        $('.email-success').fadeOut(3000);
+                    },
+                    error: function (res) {
+
+                    }
+                });
+            } else {
+                $('#subscribe-form').children('.email-success').remove();
+                $('#subscribe-form').prepend('<span class="alert alert-danger email-success">All Fields are Required.</span>');
+                $('#map').height('576px');
+                $('.email-success').fadeOut(3000);
+            }
+
+        });
+    })
+
+}(jQuery));

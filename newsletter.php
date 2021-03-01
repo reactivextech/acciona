@@ -1,35 +1,33 @@
 <?php
         if (!empty($_SERVER['HTTP_X_REQUESTED_WITH'])){
           // Recibir vía POST los datos del formulario
-          $nombre = $_POST["nombre"];
-          $correo = $_POST["correo"];
-          $telefono = $_POST["telefono"];
-          $empresa = $_POST["empresa"];
-          $mensaje = $_POST["mensaje"];
+          $newsletter = $_POST["newsletter"];
 
-          if (empty($correo)){ // Validar si la dirección de correo no esta vacia
+          if (empty($newsletter)){ // Validar si la dirección de correo no esta vacia
             $error=1;
-            $mensaje="Por favor complete todos los campos del formulario.";
+            $mensaje="Por favor complete su dirección de correo.";
             $datos=0;
-          } else {
+          }
+        //   elseif(isEmail($newsletter)) {
+        //     $error=1;
+        //     $mensaje="Ha introducido una dirección de correo electrónico no válida.";
+        //     $datos=0;
+        //     }
+        else {
 
-            $usuario_mail="info@accionacb.com"; // Direccion de envio
+            $usuario_mail="newsletter@accionacb.com"; // Direccion de envio
             $remite = "www.accionacb.com"; //Nombre de Quien remite o envia
             $remite_email = "no-reply@accionacb.com";
-            $asunto = "Correo de contacto desde $remite";
+            $asunto = "Suscripción desde $remite";
 
             // Armar un mensaje html para el cuerpo del correo electrónico
             $mensaje = "<!doctype html>
             <html class=''><head><meta charset='utf-8'>
-            <title>Han enviado el siguiente formulario de contacto</title>
+            <title>Han enviado la siguiente suscripción</title>
             </head>
             <body>
-            <h1>Contacto desde www.accionacb.com <br clear='all'/>(en línea)</h1><br clear='all'/>
-            Nombre: ".$nombre." <br clear='all'/>
-            Correo: ".$correo." <br clear='all'/>
-            Teléfono: ".$telefono." <br clear='all'/>
-            Empresa: ".$empresa." <br clear='all'/>
-            Mensaje: <br clear='all'/> ".$mensaje." <br clear='all'/>
+            <h1>Suscripción desde www.accionacb.com <br clear='all'/>(en línea)</h1><br clear='all'/>
+            Correo: ".$newsletter." <br clear='all'/>
             </body></html>";
 
             $cabeceras = "From: ".$remite." <".$remite_email.">\r\n";
@@ -41,7 +39,7 @@
 
             if($enviar_email) { // Envío exitoso
               $error=0;
-              $mensaje="Correo enviado, le estaremos respondiendo a la brevedad posible.";
+              $mensaje="Solicitud de suscripción enviada, le estaremos respondiendo a la brevedad posible.";
               $datos=0;
             }else { // No se pudo enviar el correo
               $error=1;

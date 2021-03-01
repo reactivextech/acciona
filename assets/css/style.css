@@ -8009,3 +8009,6 @@ a[class*='lightcase-icon-'].lightcase-icon-close {
 .contest-winner-section h2 {
   font-size: 55px;
 }
+.alert-success, .alert-danger {
+  display: none !important;
+}

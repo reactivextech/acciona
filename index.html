@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ACCIONA - Casa de Valores</title>
   <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico"/>
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
@@ -1104,9 +1104,9 @@
           <div class="col-lg-12">
             <div class="subscribe-wrapper">
               <span class="icon wow zoomIn" data-wow-duration="0.3s" data-wow-delay="0.5s"><img src="assets/images/icons/subscribe.png" alt="icon"></span>
-              <form class="subscribe-form">
-                <input type="text" name="subs_name" id="subs_name" placeholder="Tu dirección de correo">
-                <button type="submit" class="subs-btn">Suscríbirse<span class="btn-icon"><img src="assets/images/icons/paper-plane.png" alt="icon"></span></button>
+              <form method="POST" class="subscribe-form" id="subscribe-form">
+                <input type="email" name="newsletter" id="newsletter" requirer placeholder="Tu dirección de correo">
+                <button type="button" class="subs-btn" name="enviar" onclick="javascript:enviar_newsletter();">Suscríbirse<span class="btn-icon"><img src="assets/images/icons/paper-plane.png" alt="icon"></span></button>
               </form>
             </div>
           </div>
@@ -1230,6 +1230,27 @@
         url: "contact.php",
         type:"POST",
         data: correo,
+        cache:false,
+        contentType: false,
+        processData: false,
+        success: function(resp){
+          console.log(resp);
+          msj=JSON.parse(resp);
+          alert(msj.mensaje);
+        }
+      });
+
+    }
+
+    function enviar_newsletter(){
+      var newsletter = new FormData();
+
+      newsletter.append("newsletter", document.getElementById("newsletter").value);
+
+      $.ajax({
+        url: "newsletter.php",
+        type:"POST",
+        data: newsletter,
         cache:false,
         contentType: false,
         processData: false,

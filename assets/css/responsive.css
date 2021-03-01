@@ -789,6 +789,9 @@
   }
 }
 @media (max-width:575px) {
+  .contest-winner-section h2 {
+    font-size: 30px;
+}
   .offer-section.pt-120 {
     padding-top: 0;
   }
