@@ -434,6 +434,13 @@ li.menu_has_children:hover:after {
   -moz-transition: -webkit-transform 0.25s ease-in-out;
   -ms-transition: -webkit-transform 0.25s ease-in-out;
 }
+/* .transparent--header .menu-toggle {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+.transparent--header .menu-toggle:before, .menu-toggle:after {
+  background: #fff;
+} */
 span.is-active {
   border-color: transparent;
 }
