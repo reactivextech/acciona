@@ -1042,25 +1042,25 @@
             </div>
           </div>
           <div class="col-lg-12 contact-form-wrapper">
-            <form class="contact-form" id="contact_form_submit">
+            <form method="POST" class="contact-form" id="contact_form_submit">
               <div class="row">
                 <div class="col-lg-12">
-                  <textarea name="message" id="message" placeholder="Mensaje*"></textarea>
+                  <textarea name="message" id="message" placeholder="Mensaje*" value=""></textarea>
                 </div>
                 <div class="col-lg-6">
-                  <input type="text" name="name" id="name" placeholder="Nombre*">
+                  <input type="text" name="name" id="name" placeholder="Nombre*" value="">
                 </div>
                 <div class="col-lg-6">
-                  <input type="email" name="email" id="email" placeholder="Email*">
+                  <input type="email" name="email" id="email" placeholder="Email*" value="">
                 </div>
                 <div class="col-lg-6">
-                  <input type="tel" name="phone" id="phone" placeholder="Teléfono*">
+                  <input type="tel" name="phone" id="phone" placeholder="Teléfono*" value="">
                 </div>
                 <div class="col-lg-6">
-                  <input type="text" name="subject" id="subject" placeholder="Compañia (opcional)">
+                  <input type="text" name="subject" id="subject" placeholder="Compañia (opcional)" value="">
                 </div>
                 <div class="col-lg-12 text-center">
-                  <button type="submit" class="btn btn-primary" title="Envia tu mensaje!">Enviar Ahora</button>
+                  <button type="button" class="btn btn-primary" title="Envia tu mensaje!" name="enviar" onclick="javascript:enviar_correo();">Enviar Ahora</button>
                 </div>
               </div>
             </form>
@@ -1206,7 +1206,34 @@
   <script src="assets/js/jquery.paroller.min.js"></script>
   <!-- Lodash -->
   <script type="text/javascript" src="assets/js/lodash.min.js"></script>
+  <!-- <script src="assets/js/contact.js"></script> -->
   <script src="assets/js/main.js"></script>
+  <script>
+    function enviar_correo(){
+      var correo = new FormData();
+
+      correo.append("nombre", document.getElementById("name").value);
+      correo.append("correo", document.getElementById("email").value);
+      correo.append("telefono", document.getElementById("phone").value);
+      correo.append("empresa", document.getElementById("subject").value);
+      correo.append("mensaje", document.getElementById("message").value);
+
+      $.ajax({
+        url: "contact.php",
+        type:"POST",
+        data: correo,
+        cache:false,
+        contentType: false,
+        processData: false,
+        success: function(resp){
+          console.log(resp);
+          msj=JSON.parse(resp);
+          alert(msj.mensaje);
+        }
+      });
+
+    }
+    </script>
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
