@@ -3964,7 +3964,7 @@ blockquote p {
   color: #ffffff;
   text-transform: uppercase;
 }
-.author-area01 .content h3 span{
+.author-area01 .content h3 span {
   color: #ffffff;
   text-transform: uppercase;
   font-size: x-large;
@@ -3980,7 +3980,6 @@ blockquote p {
   font-weight: 600;
   margin-top: 5px;
 }
-
 .author-area02 {
   margin-top: 50px;
   padding: 30px 30px;
@@ -4041,7 +4040,6 @@ blockquote p {
 .element-img img {
   width: 50%;
 }
-
 .block-title {
   text-transform: uppercase;
   font-weight: 700;
