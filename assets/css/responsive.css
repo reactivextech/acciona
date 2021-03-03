@@ -179,19 +179,21 @@
    .invest-section .section-header p {
      width: 80%;
    }
-   .community-section {
-     /* background-image: none!important; */
-     /* background-image: url("../images/community-bg-movil.png"); */
-   }
+   /* .community-section {
+     background-image: none!important; 
+     background-image: url("../images/community-bg-movil.png");
+   } */
   .bg_img2 {
     background-image: url("../images/community-bg-movil.png");
   }
-   .community-section .section-header.text-white .section-title {
-    /* color: var(--heading-color); */
-  }
-  .community-section .section-header.text-white p {
-    /* color: var(--para-color); */
-  }
+  
+  /* .community-section .section-header.text-white .section-title {
+    color: var(--heading-color);
+  } */
+  
+  /* .community-section .section-header.text-white p {
+    color: var(--para-color);
+  } */
 
   .affiliate-features-section:not(.style--tow) .container > .row > div[class*="col"] > .row > div[class*="col"]:nth-child(3) {
     display: block;
@@ -824,7 +826,7 @@
   }
   .header-top-right {
     justify-content: center!important;
-    margin-top: 10px;
+    /* margin-top: 10px; */
   }
   .banner-title {
     font-size: 36px;

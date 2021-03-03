@@ -79,6 +79,7 @@
         success: function(result){
 				 var tasa = document.getElementById('tasaDolarBCV').innerHTML = result['tasa'];
 			   var fecha = document.getElementById('fechaValorDolarBCV').innerHTML = 'Fecha valor: '+result['fecha'];
+         var tasa = document.getElementById('bcv2').innerHTML = result['tasa'];
         },
         error: function(error){
           console.log('Error loading data from BCV'+JSON.stringify(error));
