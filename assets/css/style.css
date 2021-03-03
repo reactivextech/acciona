@@ -4547,6 +4547,7 @@ textarea:-ms-input-placeholder {
   color: #ffffff;
   /* border-radius: 999px;
   margin-top: 25px; */
+  text-align: center;
 }
 
 .share-announcement1 .price {
@@ -4563,6 +4564,7 @@ textarea:-ms-input-placeholder {
   color: #ffffff;
   /* border-radius: 999px;
   margin-top: 25px; */
+  text-align: center;
 }
 
 .share-announcement2 .price {
