@@ -5041,12 +5041,6 @@ textarea:-ms-input-placeholder {
 .single-investment-section .tab-content {
   margin-top: 30px;
   padding: 30px 30px;
-  border: 1px dashed #b4b2ff;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }
 .block-content .block-content-title {
   text-transform: uppercase;
@@ -8045,4 +8039,7 @@ a[class*='lightcase-icon-'].lightcase-icon-close {
 }
 .alert-success, .alert-danger {
   display: none !important;
+}
+.blog-single-details.font-size-16 ul li {
+  font-size: 16px;
 }
