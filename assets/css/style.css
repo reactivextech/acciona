@@ -3508,8 +3508,8 @@ div[class*="col"]:nth-child(5) .feature-item.item--style2 .icon {
   -o-border-radius: 10px;
 }
 .blog-item.blog-grid .thumb {
-  height: 210px;
-  max-height: 210px;
+  height: 250px;
+  max-height: 250px;
   overflow: hidden;
 }
 

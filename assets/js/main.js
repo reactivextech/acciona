@@ -105,42 +105,68 @@
         // e.preventDefault()
         const apiKey = "a13547ca2a3c4ca9b12627e82b498cce"
         let topic = "inversion"
-        let url = 'https://newsapi.org/v2/everything?q='+topic+'&sortBy=popularity&language=es&pageSize=6&excludeDomains=hipertextual.com&qInTitle=inversion&apiKey='+apiKey
+        //let url = 'https://newsapi.org/v2/everything?q='+topic+'&sortBy=popularity&language=es&pageSize=6&excludeDomains=hipertextual.com&qInTitle=inversion&apiKey='+apiKey
+        let url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=Dsak6ljecPclOkCgEeAdB1dmdr1bEqAC&q=business'
+        let web = 'https://nytimes.com/';
         let output = "";
-
+        let media = "";
+        let x=0;
         fetch(url).then((res)=>{
           return res.json()
         }).then((data)=>{
           console.log(data)
-          data.articles.forEach(article=>{
+          let latestNews = data.response.docs;
+          //data.articles.forEach(article=>{
             // let div1 = document.createElement('div');
-            
-            output += '<div class="col-xl-4 col-md-6">'+
-            '<div class="blog-item blog-grid mb-30">' +
-              
-              '<img class="thumb bg_img" src="'+article.urlToImage+'"/>'+
-              '<div class="content">'+
-                '<div class="post-tags"><a href="#0">'+topic+'</a></div>'+
-                '<h3 class="post-title"><a href="#0">'+article.title+'</a></h3>'+
-                '<ul class="post-meta">'+
-                  '<li>'+
-                    '<a href="#0" class="post-author">'+
-                      '<div class="thumb"><img src="assets/images/blog/a1.png" alt="image"></div>'+
-                      '<span class="name">'+article.author+'</span>'+
-                    '</a>'+
-                  '</li>'+
-                  '<li>'+
-                    '<a href="#0" class="post-view">'+
-                      '<i class="fa fa-eye"></i>'+
-                      '<span class="amount">1695</span>'+
-                      '<span class="text">views</span>'+
-                    '</a>'+
-                  '</li>'+
-                '</ul>'+
-              '</div>'+
-            '</div>'+
-          '</div>';
-          })
+            for (var i in latestNews) {
+              //console.log(latestNews[i]);  
+      
+              try {
+                //console.log(latestNews[i].media[0].media-metadata[2].length);
+                //if(latestNews[i].media[0].length > 0){
+                  media = latestNews[i].multimedia[2].url;
+                //}
+                //else{
+                //  media = "";
+                //}
+
+              } catch (error) {
+                console.log(error);
+                media = "";
+              }
+              //console.log(media);  
+
+                output += '<div class="col-xl-4 col-md-6">'+
+                '<div class="blog-item blog-grid mb-30">' +
+                  
+                  '<img class="thumb bg_img" src="'+web+media+'"/>'+
+                  '<div class="content">'+
+                    '<div class="post-tags"><a href="#0">'+latestNews[i].news_desk+'</a></div>'+
+                    '<h3 class="post-title"><a href="'+latestNews[i].web_url+'">'+latestNews[i].headline.main+'</a></h3>'+
+                    '<ul class="post-meta">'+
+                      '<li>'+
+                        '<a href="#0" class="post-author">'+
+                          '<div class="thumb"><img src="assets/images/blog/a1.png" alt="image"></div>'+
+                          '<span class="name">'+latestNews[i].byline.original+'</span>'+
+                        '</a>'+
+                      '</li>'+
+                      '<li>'+
+                        '<a href="#0" class="post-view">'+
+                          '<i class="fa fa-eye"></i>'+
+                          '<span class="amount"></span>'+
+                          '<span class="text">'+latestNews[i].news_desk+'</span>'+
+                        '</a>'+
+                      '</li>'+
+                    '</ul>'+
+                  '</div>'+
+                '</div>'+
+              '</div>';
+              x++;
+              if(x === 6){
+                break;
+              }
+            }
+          // })
           if (output !== "") {
             $("#news").html(output);
           }
