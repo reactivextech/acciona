@@ -335,6 +335,12 @@
   }
 }
 @media (max-width:991px) {
+  .share-announcement1, .share-announcement2 {
+    font-size: 15px;
+  }
+  .share-announcement1 .price, .share-announcement2 .price {
+    font-size: 15px;
+  }
   .community-thumb {
     margin-bottom: -10px;
 }
