@@ -13,9 +13,9 @@
             $datos=0;
           } else {
 
-            $usuario_mail="info@accionacb.com"; // Direccion de envio
-            $remite = "www.accionacb.com"; //Nombre de Quien remite o envia
-            $remite_email = "no-reply@accionacb.com";
+            $usuario_mail="info@accionavalores.com"; // Direccion de envio
+            $remite = "www.accionavalores.com"; //Nombre de Quien remite o envia
+            $remite_email = "no-reply@accionavalores.com";
             $asunto = "Correo de contacto desde $remite";
 
             // Armar un mensaje html para el cuerpo del correo electrónico
@@ -24,7 +24,7 @@
             <title>Han enviado el siguiente formulario de contacto</title>
             </head>
             <body>
-            <h1>Contacto desde www.accionacb.com <br clear='all'/>(en línea)</h1><br clear='all'/>
+            <h1>Contacto desde www.accionavalores.com <br clear='all'/>(en línea)</h1><br clear='all'/>
             Nombre: ".$nombre." <br clear='all'/>
             Correo: ".$correo." <br clear='all'/>
             Teléfono: ".$telefono." <br clear='all'/>

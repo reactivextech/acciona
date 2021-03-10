@@ -455,7 +455,7 @@
 
   //contest-winner-slider
   $('.contest-winner-slider').owlCarousel({
-    loop: true,
+    loop: false,
     margin: 0,
     // autoplay: true,
     responsiveClass:true,

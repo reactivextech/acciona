@@ -15,9 +15,9 @@
         //     }
         else {
 
-            $usuario_mail="newsletter@accionacb.com"; // Direccion de envio
-            $remite = "www.accionacb.com"; //Nombre de Quien remite o envia
-            $remite_email = "no-reply@accionacb.com";
+            $usuario_mail="newsletter@accionavalores.com"; // Direccion de envio
+            $remite = "www.accionavalores.com"; //Nombre de Quien remite o envia
+            $remite_email = "no-reply@accionavalores.com";
             $asunto = "Suscripción desde $remite";
 
             // Armar un mensaje html para el cuerpo del correo electrónico
@@ -26,7 +26,7 @@
             <title>Han enviado la siguiente suscripción</title>
             </head>
             <body>
-            <h1>Suscripción desde www.accionacb.com <br clear='all'/>(en línea)</h1><br clear='all'/>
+            <h1>Suscripción desde www.accionavalores.com <br clear='all'/>(en línea)</h1><br clear='all'/>
             Correo: ".$newsletter." <br clear='all'/>
             </body></html>";
 
