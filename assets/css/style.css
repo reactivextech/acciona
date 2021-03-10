@@ -8057,3 +8057,6 @@ a[class*='lightcase-icon-'].lightcase-icon-close {
 .kyc {
   font-size: 29px;
 }
+.responsive-preloader {
+  display: block;
+}
